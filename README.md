@@ -5,6 +5,6 @@ TheSignLab es un estudio de diseño multidisciplinario con sede en Bogotá, comp
 | Credenciales        | Valor    |
 | ------------- |:-------------:|
 | FTP USER    | ftp_thesign |
-| FTP PASSWORD   | qZg8Cyb8ZcCf."TheYear" |
+| FTP PASSWORD   | iM1K8Man."TheYear" |
 | FTP THE YEAR  | Default Year xxxx |
 
