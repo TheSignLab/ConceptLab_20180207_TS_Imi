@@ -1,0 +1,254 @@
+#SectionBranchs {}
+
+
+#SectionBranchs .wrapper {
+    height: 100vh;
+    width: 1300px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+
+
+
+
+
+/* ------ Nav Padding Space ------ */
+
+#SectionBranchs .nav-padding.upper {
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    flex-grow: 1;
+}
+
+#SectionBranchs .nav-padding.upper .content {
+    width: 100%;
+    height: 100px;
+    /* Nav Height */
+    background-color: #fff;
+    color: white;
+}
+
+#SectionBranchs .nav-padding.lower {
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+#SectionBranchs .nav-padding.lower .content {
+    width: 100%;
+    height: 50px;
+    /* Nav Height */
+    background-color: #fff;
+    color: white;
+}
+
+/* ------ \Nav Padding Space ------ */
+
+/* ------ Upper Menu ------ */
+
+#SectionBranchs .upper-menu {
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+    align-self: center;
+}
+
+#SectionBranchs .upper-menu ul.menu {
+    font-size: 20px;
+    font-family: font-regular;
+    text-transform: uppercase;
+
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    z-index: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+
+    background-color: #fff;
+}
+
+#SectionBranchs .upper-menu ul.menu li.item {
+    cursor: pointer;
+    padding: 1px 10px 1px 10px;
+
+}
+
+#SectionBranchs .upper-menu ul.menu li.item:hover {
+    color: #bbb;
+}
+
+#SectionBranchs .upper-menu ul.menu li.item.ts-bg {
+    font-family: font-bold;
+}
+
+#SectionBranchs .upper-menu ul.menu li.item.ts-bg:hover {
+    color: #000;
+}
+
+#SectionBranchs .images {
+    height: 50vh;
+    width: 60vh;
+
+    margin: 0 auto;
+    align-self: flex-end;
+    -webkit-align-self: flex-end;
+    -ms-align-self: flex-end;
+}
+
+#SectionBranchs .image {
+    height: 50vh;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#SectionBranchs .image img {
+    height: 100%;
+    margin: 0 auto;
+}
+
+#SectionBranchs .image img.full{
+    display: block;
+}
+
+#SectionBranchs .upper-menu .text {
+    height: 165px;
+    overflow: hidden;
+
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -ms-justify-content: space-around;
+}
+
+#SectionBranchs .upper-menu .text p {
+
+    display: none;
+    position: relative;
+    top: 0px;
+
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+
+    text-align: center;
+    font-size: 25px;
+    padding: 0px 200px 0px 200px
+}
+
+#SectionBranchs .upper-menu .text h1 {
+
+    display: none;
+    margin: 0px;
+    text-align: center;
+    font-size: 76px;
+    font-family: font-light;
+    font-weight: 100;
+
+}
+
+#SectionBranchs .upper-menu .text p.pUp {
+    top: -150px;
+}
+
+#SectionBranchs .upper-menu .seemore {
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 140px;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+#SectionBranchs .upper-menu .seemore.seeless {
+    border: 1px solid rgba(0, 0, 0, 1);
+    width: 140px;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+#SectionBranchs .upper-menu .text .content {
+    display: none;
+}
+
+#SectionBranchs .upper-menu .text .content[trg="0"] {
+    display: block;
+}
+
+/* ------ /Upper Menu ------ */
+
+
+#SectionBranchs .full {
+    display: none;
+
+}
+
+#SectionBranchs .back {
+    display: none;
+}
+
+#SectionBranchs .upper-menu .text .content h1.enable {
+    display: block;
+}
+
+#SectionBranchs .upper-menu .text .content p.enable {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 2000px) {
+
+}

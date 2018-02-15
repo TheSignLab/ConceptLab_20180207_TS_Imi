@@ -1,0 +1,114 @@
+/* ---------------  Fuentes ---------------- */
+
+@font-face {
+    font-family: font-thin;
+    src: url("font-thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: font-regular;
+    src: url("font-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: font-med;
+    src: url("font-med.otf") format("opentype");
+}
+
+@font-face {
+    font-family: font-light;
+    src: url("font-light.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: font-bold;
+    src: url("font-bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: font-black;
+    src: url("font-black.otf") format("opentype");
+}
+
+.f-light {
+    font-family: font-light;
+}
+
+.f-bold {
+    font-family: font-bold;
+}
+
+/* --------------- /Fuentes ---------------- */
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+   font-family: font-light;
+}
+
+
+section {}
+
+section .wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg-black {
+    background-color: #000;
+    color: #fff;
+}
+
+.bg-white {
+    background-color: #fff;
+    color: #000;
+}
+
+
+menu,
+nav,
+footer {
+    display: none;
+}
+
+
+
+
+.ts-bg{
+    background-color: #59FFCE;
+}
+.ts-hv-bg:hover{
+    background-color: #59FFCE;
+    cursor: pointer;
+}
+.ts-hv-c:hover{
+    color: #59FFCE;
+    cursor: pointer;
+}
+
+.ts-preloader{
+    display: block;
+    background-color: #fff;
+    color: #000;
+    width: 100vw;
+    height: 100vh;
+    font-family: font-regular;
+    font-size: 80px;
+    
+      display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    
+    justify-content: center;
+    text-align: center;
+}
+
+main{
+    display: none;
+}

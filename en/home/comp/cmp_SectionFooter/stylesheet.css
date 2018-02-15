@@ -1,0 +1,48 @@
+#SectionFooter .wrapper {
+    width: 100vw;
+    padding-top: 20vh;
+    height: 25vh;
+    
+}
+
+#SectionFooter .Footer {
+    color:black;
+    height: 250px;
+}
+
+#SectionFooter .Footer-Email {
+    font-size: 55px;
+    padding-top: 20px;
+}
+
+#SectionFooter .Footer-Address {
+    font-family: font-light;
+    font-size: 22px;
+}
+
+#SectionFooter .Footer-City {
+    font-family: font-bold;
+    font-size: 25px;
+}
+
+#SectionFooter .Footer-HashAndSocial {
+    padding: 20px;
+     font-size: 25px;
+}
+
+#SectionFooter .Footer-Hash {
+    font-family: font-light;
+    display: inline;
+}
+
+#SectionFooter .Footer-SocialList {
+    font-family: font-light;
+    display: inline;
+
+}
+
+#SectionFooter .Footer-Drop {
+    font-family: font-light;
+    display: inline;
+
+}
