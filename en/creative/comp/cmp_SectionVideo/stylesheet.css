@@ -1,0 +1,10 @@
+#SectionVideo{
+    
+}
+
+#SectionVideo video{
+    display: block;
+    height: 100vh;
+    max-width: 100vw;
+    margin: 0 auto;
+}

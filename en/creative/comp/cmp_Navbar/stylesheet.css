@@ -1,0 +1,113 @@
+     nav {
+         position: fixed
+     }
+
+     nav {
+
+         font-family: font-light;
+         font-size: 20px;
+         position: fixed;
+         display: block;
+         top: -200px;
+         left: 0;
+         z-index: 10;
+         width: 100%;
+         height: 100px;
+
+         background-color: white;
+     }
+
+     nav .title {
+         font-family: font-bold;
+         height: 100%;
+
+         font-size: 40px;
+
+         padding-left: 40px;
+         padding-right: 40px;
+
+         float: left;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         text-align: center;
+     }
+
+     nav .title span {
+         position: relative;
+         top: -5px;
+     }
+
+
+
+
+
+     nav .sections {
+         font-family: font-bold;
+         height: 100%;
+         float: right;
+
+         padding-left: 40px;
+         padding-right: 40px;
+
+     }
+
+     nav .section {
+         font-size: 15px;
+         height: 100%;
+         float: left;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         text-align: center;
+
+
+     }
+
+     nav .section div {
+         background-color: #59FFCE;
+         color: black;
+         font-size: 20px;
+         margin-right: 10px;
+     }
+
+     nav .section span {
+         padding: 5px;
+
+     }
+
+     nav .subsection {
+
+         height: 100%;
+         float: left;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         text-align: center;
+
+         font-size: 20pt;
+         position: relative;
+         top: -1px;
+     }
+
+     nav .subsection span {
+
+         float: left;
+
+     }
+
+     nav .dots {
+         height: 100%;
+         float: left;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         text-align: center;
+     }
+
+     nav .dots span {
+         padding: 10px;
+         font-size: 70px;
+         position: relative;
+         top: -10px;
+     }

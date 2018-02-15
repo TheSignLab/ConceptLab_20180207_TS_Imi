@@ -1,0 +1,139 @@
+#SectionBranchs {
+    
+    display: block;
+}
+
+
+#SectionPortfolio .wrapper {
+
+    width: 1300px;
+    height:auto;
+
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+
+#SectionPortfolio h1 {
+    font-size: 80px;
+    text-align: center;
+    font-family: font-light;
+    font-weight: 100;
+    margin: 0px;
+}
+
+#SectionPortfolio p {
+    font-size: 25px;
+    text-align: center;
+    font-family: font-light;
+    font-weight: 100;
+    width: 90%;
+    margin: 0px auto;
+}
+
+
+/* ------ Nav Padding Space ------ */
+
+#SectionPortfolio .nav-padding {
+    width: 100%;
+    background-color: #fff;
+    z-index: 1
+}
+
+#SectionPortfolio .nav-padding .content {
+    width: 100%;
+    height: 200px;
+    /* Nav Height */
+    background-color: #fff;
+    color: white;
+}
+
+#SectionPortfolio .nav-padding.lower .content {
+    width: 100%;
+    height: 100px;
+    /* Nav Height */
+    background-color: #fff;
+    color: white;
+}
+
+
+#SectionPortfolio .project-wrapper {
+
+    width: 100%;
+
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: space-around;
+
+        flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    
+    
+    
+}
+
+#SectionPortfolio .project-wrapper .project {
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+     margin-right: auto;
+}
+#SectionPortfolio .project-wrapper .project .title{
+    font-family: font-bold;
+    font-size: 20px;
+    padding: 5px;
+    text-align:center;
+}
+
+#SectionPortfolio .project-wrapper .project:nth-child(odd) .title {
+    background-color: #59FFCC;
+    color: black;
+}
+#SectionPortfolio .project-wrapper .project:nth-child(even) .title {
+        background-color: #000;
+    color: white;
+
+}
+
+#SectionPortfolio .project-wrapper .project .image {
+        background-color: black;
+    background-size: cover;
+       width: 400px;
+    height: 400px;
+    cursor: pointer;
+
+}
+
+#SectionPortfolio .project-wrapper .project .image:hover {
+    -webkit-filter: brightness(30%);
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+#SectionPortfolio .project-wrapper .project .title {
+background-color: aqua;
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+
+
+
+@media only screen and (max-width: 2000px) {}
