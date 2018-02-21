@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $("footer").hide();
     $('main').fullpage({
         sectionSelector: 'section',
         anchors: ['PortfolioText', 'PortfolioImages', 'Message', 'PhotoAndText','Footer'],
