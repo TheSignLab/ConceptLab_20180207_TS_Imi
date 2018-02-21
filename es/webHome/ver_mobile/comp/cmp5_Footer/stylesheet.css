@@ -1,0 +1,150 @@
+.cmp_Equipo {
+    z-index: 10;
+}
+.cmp_Footer{
+    height: auto;
+    
+    margin-top: 15px;
+
+}
+.cmp_Footer .wrapper {
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+    
+    padding-top: 30px;
+
+    z-index: 50;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+
+.cmp_Footer .Footer {
+    color: white;
+    height: auto;
+}
+
+.cmp_Footer .Footer-Email {
+    font-size: 6vw;
+
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+
+. .cmp_Footer .Footer-HashAndSocial {
+    padding: 20px;
+
+    padding-top: calc(1vh + 10px);
+    padding-bottom: calc(1vh + 10px);
+}
+
+.cmp_Footer .Footer-Hash {
+    font-family: font-light;
+    display: inline;
+    font-size: 5vw;
+}
+
+.cmp_Footer .Footer-SocialList {
+    font-family: font-light;
+    display: inline;
+    font-size: 5vw;
+
+
+}
+
+.cmp_Footer .Footer-Address {
+    font-family: font-light;
+    font-size: 4vw;
+}
+
+.cmp_Footer .Footer-City {
+    font-family: font-bold;
+    font-size: 5vw;
+    position: relative;
+    top: -0.5vh;
+}
+
+.cmp_Footer .Footer-Drop {
+    font-family: font-light;
+    display: inline;
+    cursor: pointer;
+    
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.cmp_Footer .tintColor {
+    font-size: 5.5vw;
+    padding-right: 3vw;
+}
+
+
+
+
+.cmp_Footer .d0 {
+    color: #59FFCC;
+
+}
+
+.cmp_Footer .d1 {
+    color: #5AD8FF;
+}
+
+.cmp_Footer .d2 {
+    color: #C676FF;
+}
+
+.cmp_Footer .d3 {
+    color: #FF5AC8;
+}
+
+.cmp_Footer .d4 {
+    color: #FF704A;
+}
+.cmp_Footer .d5 {
+    color: #FFE445;
+}
+
+
+
+.cmp_Footer .d0:hover {
+    color: #59FFCC;
+      
+    filter:brightness(150%);
+}
+
+.cmp_Footer .d1:hover {
+    color: #5AD8FF;filter:brightness(150%);
+}
+
+.cmp_Footer .d2:hover {
+    color: #C676FF;filter:brightness(150%);
+}
+
+.cmp_Footer .d3:hover {
+    color: #FF5AC8;filter:brightness(150%);
+}
+
+.cmp_Footer .d4:hover {
+    color: #FF704A;filter:brightness(150%);
+}
+.cmp_Footer .d5:hover {
+    color: #FFE445;
+    filter:brightness(150%);}
+
+
+

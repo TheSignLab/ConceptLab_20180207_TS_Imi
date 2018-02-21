@@ -7,7 +7,7 @@
 			<Port>21</Port>
 			<Protocol>0</Protocol>
 			<Type>0</Type>
-			<User>ftp_web@thesignlab.co</User>
+			<User>ftp_dev@thesignlab.co</User>
 			<Pass encoding="base64">aU0xSzhNYW4uMTk5Mw==</Pass>
 			<Logontype>1</Logontype>
 			<TimezoneOffset>0</TimezoneOffset>
@@ -15,8 +15,8 @@
 			<MaximumMultipleConnections>0</MaximumMultipleConnections>
 			<EncodingType>Auto</EncodingType>
 			<BypassProxy>0</BypassProxy>
-			<Name>Web_TheSignlab </Name>
-			<Comments>iM1K8Man.1993</Comments>
+			<Name>Dev_TheSignlab </Name>
+			<Comments>Z2tI1RHU.1993</Comments>
 			<Colour>0</Colour>
 			<LocalDir />
 			<RemoteDir />
