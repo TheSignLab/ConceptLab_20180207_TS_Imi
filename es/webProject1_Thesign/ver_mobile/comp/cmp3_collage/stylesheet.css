@@ -1,0 +1,343 @@
+ .Collage-FullSize {
+
+     width: 100%;
+     height: 100%;
+
+     background-repeat: no-repeat;
+     background-size: contain;
+
+
+
+ }
+
+ .Collage-Space {
+     width: 100%;
+     
+       height: 17vh;
+     display: block;
+
+     -webkit-transition: all 0.25s;
+     /* Safari */
+     transition: all 0.25s;
+     background-color: black;
+ }
+
+ .Collage-Contain {
+     display: block;
+     width: 100vw;
+     height: calc(93vh - 20px);;
+     padding-top: calc(7vh + 20px);
+     
+     background-color: black;
+
+ }
+
+ .Collage-Item {
+
+     cursor: pointer;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     overflow: hidden;
+ }
+
+ .Collage-Item:hover {}
+
+ .Collage-Layer {
+     width: 100%;
+     height: 100%;
+     /*border: 5px solid rgba(1,1,1,0);*/
+     -webkit-transition: all 0.5s;
+     /* Safari */
+     transition: all 0.5s;
+ }
+
+ .Collage-Layer:hover {
+     width: 100%;
+     height: 100%;
+
+     background-color: rgba(0, 0, 0, 0.0);
+     /*border: 5px solid rgba(255,255,255,9);*/
+ }
+
+ .Full {
+     width: 80%;
+     height: 80%;
+
+ }
+
+ .Thumb {
+
+     width: 50vw;
+     height: 33vh;
+     float: left;
+     position: relative;
+
+     -webkit-transition: all 0.25s ease-in-out;
+     -moz-transition: all 0.25s ease-in-out;
+     -ms-transition: all 0.25s ease-in-out;
+     -o-transition: all 0.25s ease-in-out;
+     transition: all 0.25s ease-in-out;
+ }
+
+ .Thumb .Collage-Img {
+     width: 100%;
+     height: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     -webkit-transition: all 0.5s;
+     /* Safari */
+     transition: all 0.5s;
+ }
+
+ .Full .Collage-Img {
+     width: 100%;
+     height: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ .Thumb .Collage-Img:hover {
+     transform: scale(1.1);
+ }
+
+
+
+
+
+
+ .Collage-FullSizePic {
+
+     width: 100%;
+       
+
+ }
+
+ .FullCollage {
+
+     width: 80%;
+     height: 80%;
+     overflow: hidden;
+ }
+
+ .FullCollage-Img {
+     width: 100%;
+     height: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ .Collage-Full-Layer {
+     background-color: rgba(1, 1, 1, 0.9);
+     width: 100%;
+     height: 100%;
+ }
+
+
+ .Modal {
+     position: absolute;
+     /* Stay in place */
+     z-index: 100;
+     /* Sit on top */
+     left: 0;
+     top: 0;
+     width: 100%;
+     /* Full width */
+     height: 100%;
+     /* Full height */
+     overflow: auto;
+     /* Enable scroll if needed */
+     background-color: rgb(0, 0, 0);
+     /* Fallback color */
+     background-color: rgba(0,0,0, 0.9);
+     /* Black w/ opacity */
+     display: block;
+     z-index: -1000;
+ }
+
+
+
+ .Modal .flex-wrapper {
+
+         display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+     
+      -webkit-display: flex;
+      -webkit-align-items: center;
+      -webkit-justify-content: center;
+     
+     -ms-display: flex;
+     -ms-align-items: center;
+     -ms-justify-content: center; 
+     
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     width: 100vw;
+     height: 100vh;
+
+
+ }
+
+.Modal .container {
+    
+  display: block;
+    width: 85vw;
+
+    
+}
+
+ .Modal .img-wrapper img {
+     width: 500px;
+     float: left;
+ }
+
+ .modal-close {
+     color: black;
+     font-size: 50px;
+     align-self: flex-start;
+     position: relative;
+     top: -25px;
+     left: -25px;
+     float: right;
+     background-color: white;
+     border-radius: 2px;
+     padding: 5px;
+     width: 40px;
+     height: 40px;
+     z-index: 1000;
+
+ }
+
+ .modal-close i {
+     position: relative;
+     TOP: -11px;
+     cursor: pointer;
+ }
+
+ .modal-buttons {
+     display: inline-block;
+    
+     margin: 0 auto;
+     background-color: white;
+     border: 6px solid black;
+ }
+
+ .modal-next {
+        width: 20px;
+    height: 50px;
+    color: black;
+    float: left;
+    cursor: pointer;
+    padding-right: 35px;
+    padding-left: 0px;
+    padding-top: 21px;
+
+
+ }
+ .modal-middle {
+     width: 80px;
+     height: 80px;
+
+     color: black;
+     float: left;
+     cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 5px;
+     
+     
+
+
+ }
+.modal-prev {
+    width: 20px;
+    height: 50px;
+    color: black;
+    float: left;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    
+}
+
+.modal-prev:hover{
+               -webkit-filter: grayscale(100%) invert(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) invert(50%);
+} 
+.modal-next:hover{
+               -webkit-filter: grayscale(100%) invert(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) invert(50%);
+} 
+                            .modal-prev  img{
+                                   height: 1.9vw !important;
+    width: 1.25vw !important;
+                            }
+                            .modal-middle img{
+                               height: 2.8vw !important;
+    width: 6px !important;
+                            }
+                        
+                            .modal-next  img{
+                             height: 1.9vw !important;
+    width: 1.25vw !important;
+                            }
+
+.Modal img{
+    width: 80vw;
+}
+ .siema img {
+     width: 80vw;
+ }
+
+
+.modal-buttons.exit{
+    float: right;
+    background-color: white;
+    color: black;
+    
+    width: 3vw;
+    height: 3vw;
+
+    border: 5px solid black;
+            -webkit-filter: grayscale(100%) invert(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) invert(0%);
+}
+
+.modal-buttons.exit .SideMenu-X{
+
+        width: 3.0vw;
+    height: 3.0vw;
+    cursor: pointer;
+      width: 2.2vw;
+    height: 2.2vw;
+
+margin: 0.35vw 0.5vw 1vw 1vw;
+    
+           -webkit-filter: grayscale(100%) invert(1000%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) invert(1000%);
+}
+.modal-buttons.exit{
+    font-family: font-black;
+}
+
+
+.Thumb .Collage-Img {
+
+    background-position: center center !important; 
+}
+
+.swiper-container{
+    padding-top: 20px;
+}
+

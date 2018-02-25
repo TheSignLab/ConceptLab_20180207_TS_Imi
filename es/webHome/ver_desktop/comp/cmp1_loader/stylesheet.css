@@ -1,0 +1,29 @@
+preloader {
+    
+    display: block;
+    background-color: #000;
+    
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    
+    font-family: font-bold;
+    font-size: 4vw;
+    
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+
+    justify-content: center;
+    text-align: center;
+    z-index: 100;
+}

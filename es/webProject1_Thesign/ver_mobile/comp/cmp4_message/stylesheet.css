@@ -1,0 +1,30 @@
+.cmp_Message .wrapper {
+    width: 100vw;
+    height: auto;
+
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+
+    justify-content: center;
+}
+
+.cmp_Message .wrapper h1 {
+    font-size: 7vw;
+    text-align: center;
+    font-weight: 100;
+    
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    display:  block;
+}
+
+
+
+

@@ -1,0 +1,125 @@
+   nav {
+       position: fixed
+   }
+
+   nav {
+
+       font-family: font-light;
+
+       position: fixed;
+       display: block;
+       
+       padding-top: 2vh;
+       top: -10vh;
+       left: 0;
+       z-index: 10;
+       width: 100%;
+       height: 7vh;
+       
+
+       background-color: rgba(0, 0, 0, 0);
+
+   }
+
+   nav.navShow {
+       top: 0px;
+   }
+
+   nav.navLight {
+       color: white;
+   }
+
+   nav .title {
+       font-family: font-bold;
+       height: 100%;
+
+       font-size: 2.5vw;
+
+       padding-left: 3vw;
+
+       float: left;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       text-align: center;
+   }
+
+   nav .title span {
+       position: relative;
+       top: -5px;
+   }
+
+
+
+
+
+   nav .sections {
+       font-family: font-bold;
+       height: 100%;
+       float: right;
+padding-right: 3vw;
+
+
+   }
+
+   nav .section {
+       font-size: 1.5vw;
+         
+       height: 100%;
+       float: left;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       text-align: center;
+
+
+   }
+
+   nav .section div {
+       background-color: #59FFCE;
+       color: black;
+   }
+
+   nav .section span {
+       padding: 5px;
+
+   }
+
+   nav .subsection {
+
+       height: 100%;
+       float: left;
+       display: flex;
+       
+     
+       
+       justify-content: center;
+       flex-direction: column;
+       text-align: center;
+
+       font-size: 1.5vw;
+       position: relative;
+       top: -1px;
+   }
+
+   nav .subsection span {
+
+       float: left;
+
+   }
+
+   nav .dots {
+       height: 100%;
+       float: left;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       text-align: center;
+   }
+
+  nav .dots span {
+    padding: 10px;
+    font-size: 3vw;
+    position: relative;
+    top: -0.2vw;
+}
