@@ -40,14 +40,14 @@ if($(this).attr("kphoto")){
 
       $(".modal-prev").click(function () {
 
-          mySwiper.slideNext();
+          mySwiper.slidePrev();
 
 
       })
 
       $(".modal-next").click(function () {
 
-          mySwiper.slidePrev();
+          mySwiper.slideNext();
       })
       
       

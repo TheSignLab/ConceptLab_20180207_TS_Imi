@@ -27,7 +27,7 @@ $(document).ready(function () {
         var lang = getCookie("ts-language");
         var mob = getCookie("ts-isMobile");
         
-        location.href = "/es/webHome/ver_desktop/index.html";
+        location.href = "/ftp_web/es/webHome/ver_desktop/index.html";
         
     });
     
@@ -36,7 +36,7 @@ $(document).ready(function () {
         var lang = getCookie("ts-language");
         var mob = getCookie("ts-isMobile");
         
-        location.href = "/es/webHome/ver_desktop/index.html";
+        location.href = "/ftp_web/es/webHome/ver_desktop/index.html";
         
     });
     
@@ -45,7 +45,7 @@ $(document).ready(function () {
         var lang = getCookie("ts-language");
         var mob = getCookie("ts-isMobile");
         
-        location.href = "/es/webCreative/ver_desktop/index.html";
+        location.href = "/ftp_web/es/webCreative/ver_desktop/index.html";
         
     });
 

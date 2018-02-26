@@ -45,3 +45,191 @@
     max-width: 80vw;
     z-index: 100;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.speech-bubble {
+    position: relative;
+    width: auto;
+    border-radius: 10px;
+    font-size: 22px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: #59FFCE;
+    border-bottom: 0;
+    margin-left: -15px;
+    margin-bottom: -15px;
+}
+
+
+.mask {
+    border: 1px solid black;
+    position: relative;
+        width: 6vw;
+    height: 6vw;
+
+}
+
+
+
+
+
+
+
+
+.daniela.mask {
+    
+    top: -42vw;
+    left: 15vw;
+     
+}
+
+.daniela .speech-bubble {
+    display: none;
+    width: 585px;
+    position: relative;
+    left: -90px;
+    top: -80px;
+}
+
+.jorge.mask {
+   top: -49vw;
+    left: 25vw;
+     
+}
+
+.jorge .speech-bubble {
+    display: none;
+    width: 600px;
+    position: relative;
+    left: -85px;
+    top: -80px;
+}
+
+.male.mask {
+        top: -46vw;
+    left: 28vw;
+     
+}
+
+.male .speech-bubble {
+    display: none;
+    width: 507px;
+    position: relative;
+    left: -67px;
+    top: -77px;
+}
+
+.andres.mask {
+    top: -60vw;
+    left: 38vw;
+     
+}
+
+.andres .speech-bubble {
+    display: none;
+    width: 514px;
+    position: relative;
+    left: -62px;
+    top: -80px;
+}
+
+
+.carlos.mask {
+    top: -67vw;
+    left: 50vw;
+     
+}
+
+.carlos .speech-bubble {
+    display: none;
+    width: 455px;
+    position: relative;
+    top: -83px;
+    left: -340px;
+}
+
+
+.carlos .speech-bubble:after {
+    left: 80%;
+}
+
+
+.joell.mask {
+    top: -72vw;
+    left: 60vw;
+}
+
+.joell .speech-bubble {
+    display: none;
+    width: 521px;
+    position: relative;
+   top: -75px;
+    left: -400px;
+}
+
+
+.joell .speech-bubble:after {
+    left: 80%;
+}
+
+
+.diego.mask {
+    top: -77vw;
+    left: 68vw;
+     
+}
+
+.diego .speech-bubble {
+    display: none;
+    width: 527px;
+    position: relative;
+    top: -75px;
+    left: -400px;
+}
+
+
+.diego .speech-bubble:after {
+    left: 80%;
+}
+
+.vane.mask {
+    top: -75vw;
+    left: 52vw;
+     
+}
+
+.vane .speech-bubble {
+    display: none;
+    width: 630px;
+    position: relative;
+    top: -75px;
+    left: -480px;
+}
+
+
+.vane .speech-bubble:after {
+    left: 80%;
+}
+

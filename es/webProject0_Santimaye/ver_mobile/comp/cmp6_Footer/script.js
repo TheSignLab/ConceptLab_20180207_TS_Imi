@@ -85,17 +85,17 @@ $(document).ready(function () {
     $(".cmp_Cover .modal-prev").click(function () {
         var mob = getCookie("ts-isMobile");
         if (mob) {
-            location.href = "/es/webProject1_Thesign/ver_mobile/index.html";
+            location.href = "/ftp_web/es/webProject1_Thesign/ver_mobile/index.html";
         } else {
-            location.href = "/es/webProject1_Thesign/ver_desktop/index.html";
+            location.href = "/ftp_web/es/webProject1_Thesign/ver_desktop/index.html";
         }
     });
     $(".cmp_Cover .modal-next").click(function () {
         var mob = getCookie("ts-isMobile");
         if (mob) {
-            location.href = "/es/webProject2_CTS/ver_mobile/index.html";
+            location.href = "/ftp_web/es/webProject2_CTS/ver_mobile/index.html";
         } else {
-            location.href = "/es/webProject2_CTS/ver_desktop/index.html";
+            location.href = "/ftp_web/es/webProject2_CTS/ver_desktop/index.html";
         }
     });
 

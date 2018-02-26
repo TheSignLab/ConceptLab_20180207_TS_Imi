@@ -25,9 +25,9 @@ $(document).ready(function () {
         var lang = getCookie("ts-language");
         var mob = getCookie("ts-isMobile");
         if (mob) {
-            location.href = "/es/webHome/ver_mobile/index.html#VideoManifiesto";
+            location.href = "/ftp_web/es/webHome/ver_mobile/index.html#VideoManifiesto";
         } else {
-            location.href = "/es/webHome/ver_desktop/index.html#VideoManifiesto";
+            location.href = "/ftp_web/es/webHome/ver_desktop/index.html#VideoManifiesto";
         }
     });
 
@@ -36,9 +36,9 @@ $(document).ready(function () {
         var lang = getCookie("ts-language");
         var mob = getCookie("ts-isMobile");
         if (mob) {
-            location.href = "/es/webHome/ver_mobile/index.html#Equipo";
+            location.href = "/ftp_web/es/webHome/ver_mobile/index.html#Equipo";
         } else {
-            location.href = "/es/webHome/ver_desktop/index.html#Equipo";
+            location.href = "/ftp_web/es/webHome/ver_desktop/index.html#Equipo";
         }
 
     });
@@ -47,9 +47,9 @@ $(document).ready(function () {
         var lang = getCookie("ts-language");
         var mob = getCookie("ts-isMobile");
         if (mob) {
-            location.href = "/es/webCreative/ver_mobile/index.html";
+            location.href = "/ftp_web/es/webCreative/ver_mobile/index.html";
         } else {
-            location.href = "/es/webCreative/ver_desktop/index.html";
+            location.href = "/ftp_web/es/webCreative/ver_desktop/index.html";
         }
     });
 

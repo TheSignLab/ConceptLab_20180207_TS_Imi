@@ -158,13 +158,13 @@ $(document).ready(function () {
     $(".cmp_Cover .modal-prev").click(function () {
         var mob = getCookie("ts-isMobile");
         if (mob) {
-            location.href = "/es/webProject0_Santimaye/ver_mobile/index.html";
+            location.href = "/ftp_web/es/webProject0_Santimaye/ver_mobile/index.html";
         } else {
-            location.href = "/es/webProject0_Santimaye/ver_desktop/index.html";
+            location.href = "/ftp_web/es/webProject0_Santimaye/ver_desktop/index.html";
         }
     });
 
     $(".cmp_Cover .modal-next").click(function () {
-        location.href = "/es/webProject3_Uwa/ver_mobile/index.html";
+        location.href = "/ftp_web/es/webProject3_Uwa/ver_mobile/index.html";
     });
 });
