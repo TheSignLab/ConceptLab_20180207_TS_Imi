@@ -1,3 +1,6 @@
 $(document).ready(function () {
-    $("preloader").fadeOut(500);
+    setTimeout(function(){
+            $("preloader").fadeOut(500);
+    },500)
+
 });

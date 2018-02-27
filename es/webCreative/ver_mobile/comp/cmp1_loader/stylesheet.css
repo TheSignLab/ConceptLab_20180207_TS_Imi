@@ -8,6 +8,7 @@ preloader {
     height: 100vh;
     
     font-family: font-bold;
+    font-weight: 100;
     font-size: 10vw;
     
     position: fixed;
@@ -39,6 +40,7 @@ preloader div{
 
 preloader div h1{
     text-align: center;
+    font-weight: 100;
 }
 
 preloader div h2{

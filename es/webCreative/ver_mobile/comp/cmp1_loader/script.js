@@ -2,5 +2,5 @@ $(document).ready(function () {
 setTimeout(function(){
     
     $("preloader").fadeOut();
-},400)
+},600)
 });

@@ -7,7 +7,8 @@ preloader {
     width: 100vw;
     height: 100vh;
     
-    font-family: font-bold;
+  font-family: font-bold;
+    font-weight: 100;
     font-size: 4vw;
     
     position: fixed;

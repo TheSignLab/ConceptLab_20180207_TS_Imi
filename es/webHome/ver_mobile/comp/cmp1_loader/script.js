@@ -3,6 +3,6 @@ $(document).ready(function () {
         
         $("preloader").fadeOut(500);
         
-    },500)
+    },700)
     
 });
