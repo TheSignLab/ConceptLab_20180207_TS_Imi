@@ -1,3 +1,8 @@
+
+
+
+
+
 .mdl_Video {
     display: none;
     position: absolute;
@@ -19,9 +24,9 @@
     position: absolute;
     top: -100vh;
     height: 100vh;
-    width: 100vw; 
+    width: 100vw;
     z-index: 10;
-    
+
         display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -34,13 +39,13 @@
     justify-content: center;
     -webkit-justify-content: center;
     -ms-justify-content: center;
-    
+
     align-items: center;
     -webkit-align-items: center;
     -ms-align-items: center;
-    
+
     background-color: rgba(0, 0, 0, 0.85);
-    
+
     -webkit-transition: all 500ms ease-in-out;
 -moz-transition: all 500ms ease-in-out;
 -ms-transition: all 500ms ease-in-out;
@@ -57,9 +62,10 @@ transition: all 500ms ease-in-out;
     height: auto;
     width: 100vw;
     color: white;
-    
+
     text-align: center;
 }
+
 
 .mdl_PortadaText .separation{
     font-size: 36px;
@@ -68,12 +74,14 @@ transition: all 500ms ease-in-out;
     margin: 0 auto;
 }
 
+
+
 .mdl_PortadaText .wrapper h1{
     text-transform: uppercase;
     font-family: font-black;
     font-size: 40px;
     margin: 0px;
-    
+
 }
 
 .mdl_PortadaText .wrapper h2 {
@@ -110,7 +118,7 @@ transition: all 500ms ease-in-out;
     width: 100vw;
     height: 100vh;
     display: block;
-    
+
             display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -123,18 +131,18 @@ transition: all 500ms ease-in-out;
     justify-content: center;
     -webkit-justify-content: center;
     -ms-justify-content: center;
-    
+
     align-items: center;
     -webkit-align-items: center;
     -ms-align-items: center;
 
-    
+
     -webkit-transition: all 500ms ease-in-out;
 -moz-transition: all 500ms ease-in-out;
 -ms-transition: all 500ms ease-in-out;
 -o-transition: all 500ms ease-in-out;
 transition: all 500ms ease-in-out;
-    
+
 
 }
 
@@ -168,4 +176,15 @@ transition: all 500ms ease-in-out;
     width: 100vw;
     margin: 0 auto;
     display: none;
+}
+
+
+@media only screen and (max-width: 400px) {
+  .mdl_PortadaText .separation{
+      font-size: 26px;
+      letter-spacing: 10px;
+      width: 80%;
+      margin: 0 auto;
+  }
+
 }
