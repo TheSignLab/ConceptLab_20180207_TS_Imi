@@ -1,7 +1,4 @@
-var vid = document.querySelector("video");
-vid.onended = function () {
-    $.fn.fullpage.moveSectionDown();
-};
+
 
 function hideThisModal() {
     $(".mdl_PortadaText").removeClass("onDisplay");
@@ -18,6 +15,7 @@ if (modalText.addEventListener) {
 else {
     modalText.attachEvent("onmousewheel", ModalWheelHandler);
 }
+
 function ModalWheelHandler(e) {
     if (CurrentSection == 1) {
         // cross-browser wheel delta
@@ -25,11 +23,12 @@ function ModalWheelHandler(e) {
         var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
         if (delta == -1) {
             $(modalText).removeClass("onDisplay");
-            $(".cmp_Portada img").hide();
+     
             $("footer").fadeOut();
-            $(".cmp_Portada video").show();
-            $(".cmp_Portada video")[0].play();
-            $("nav").hide();
+           
+          
+            $("nav").show();
+            $("nav").css({color:"white"});
             $.fn.fullpage.setAllowScrolling(false);
         }
     }
@@ -45,30 +44,32 @@ if (portadaTComp.addEventListener) {
 else {
     portadaTComp.attachEvent("onmousewheel", PortadaWheelHandler);
 }
+
 function PortadaWheelHandler(e) {
     if (CurrentSection == 1) {
         // cross-browser wheel delta
         var e = window.event || e; // old IE support
         var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
         if (delta == 1) {
-
             $(modalText).addClass("onDisplay");
-            $(".cmp_Portada img").show();
+          
             $("footer").fadeIn();
             $("nav").show();
-            $(".cmp_Portada video").hide();
-            $(".cmp_Portada video")[0].pause();
-
-
+           $("nav").css({color:"black"});
+           
             $.fn.fullpage.setAllowScrolling(false);
-        } else {
+        }
+        else {
             $.fn.fullpage.moveTo(2);
             $.fn.fullpage.setAllowScrolling(true);
+             $("nav").css({color:"white"});
         }
-}}
-function updatePlayVideo(k){
-    if(k == 1){
-        $(".cmp_Portada video").show();
-            $(".cmp_Portada video")[0].play();
+    }
+}
+
+function updatePlayVideo(k) {
+    if (k == 1) {
+    
+      
     }
 }
