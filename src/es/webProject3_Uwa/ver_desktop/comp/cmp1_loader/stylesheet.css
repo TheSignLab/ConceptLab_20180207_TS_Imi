@@ -54,7 +54,7 @@ preloader div h2{
 }
 
 preloader img{
-    width: 100vw;
+    width: 30vw;
     max-height: 100vh;
     filter: invert(100%);
       -webkit-filter:invert(100%);
