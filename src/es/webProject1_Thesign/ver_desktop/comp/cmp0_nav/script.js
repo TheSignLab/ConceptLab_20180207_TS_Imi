@@ -1,4 +1,5 @@
 function updateNavStyle(nSection) {
+    $("nav").show();
     if (nSection == 0) {
         $("nav").removeClass("navShow");
     }
@@ -12,6 +13,12 @@ function updateNavStyle(nSection) {
     }
     else {
         $("nav").removeClass("navLight");
+    }
+    if (nSection == 2 || nSection == 1) {
+        $("nav").removeClass("noBg");
+    }
+    else {
+        $("nav").addClass("noBg");
     }
 }
 $(document).ready(function () {

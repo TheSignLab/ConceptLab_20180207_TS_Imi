@@ -1,174 +1,191 @@
-/* ---------------  Fuentes ---------------- */
+.fp-tableCell {
+    display: table-cell;
+    vertical-align:top !important;
+    width: 100%;
+    height: 100%;
+}
+
+.ts-c,
+.ts-hv-bg:hover,
+.ts-hv-c.c1:hover,
+.ts-hv-c.c2:hover,
+.ts-hv-c.c3:hover,
+.ts-hv-c.c4:hover,
+.ts-hv-c.c5:hover {
+    cursor: pointer
+}
 
 @font-face {
     font-family: font-thin;
-    src: url("../../../../lib/tsframework/font-thin.otf") format("opentype");
+    src: url("../../../../lib/tsframework/font-thin.otf") format("opentype")
 }
 
 @font-face {
     font-family: font-regular;
-    src: url("../../../../lib/tsframework/font-regular.otf") format("opentype");
+    src: url("../../../../lib/tsframework/font-regular.otf") format("opentype")
 }
 
 @font-face {
     font-family: font-med;
-    src: url("../../../../lib/tsframework/font-med.otf") format("opentype");
+    src: url("../../../../lib/tsframework/font-med.otf") format("opentype")
 }
 
 @font-face {
     font-family: font-light;
-    src: url("../../../../lib/tsframework/font-light.ttf") format("opentype");
+    src: url("../../../../lib/tsframework/font-light.ttf") format("opentype")
 }
 
 @font-face {
     font-family: font-bold;
-    src: url("../../../../lib/tsframework/font-bold.otf") format("opentype");
+    src: url("../../../../lib/tsframework/font-bold.otf") format("opentype")
 }
 
 @font-face {
     font-family: font-black;
-    src: url("../../../../lib/tsframework/font-black.otf") format("opentype");
+    src: url("../../../../lib/tsframework/font-black.otf") format("opentype")
 }
 
 .f-light {
-    font-family: font-light;
+    font-family: font-light
 }
 
 .f-bold {
-    font-family: font-bold;
+    font-family: font-bold
 }
-
 
 .f-black {
-    font-family: font-black;
+    font-family: font-black
 }
 
-
-/* --------------- /Fuentes ---------------- */
-
-html,
 body,
-main,nav,menu,footer {
-    padding: 0px;
-    margin: 0px;
+footer,
+html,
+main,
+menu,
+nav {
+    padding: 0;
+    margin: 0;
     font-family: font-light;
-    background-color: black;
+    background-color: #000
 }
-
 
 section .wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 100vh
 }
 
 .bg-black {
     background-color: #000;
-    color: #fff;
+    color: #fff
 }
 
 .bg-white {
     background-color: #fff;
-    color: #000;
+    color: #000
 }
-.bg-blackWhite{
-        background-color: #000;
+
+.bg-blackWhite {
+    background-color: #000;
     color: #fff;
-    background-image: url(bg.png);
+    background-image: url(bg.png)
 }
 
-
-.ts-bg {
-    background-color: #59FFCE !important;
-}
-.ts-bg.c0 {
-    background-color: #59FFCE !important;
-}.ts-bg.c1 {
-    background-color: #5AD8FF !important;
-}
-.ts-bg.c2 {
-    background-color: #C676FF !important;
-}
-.ts-bg.c3 {
-    background-color: #FF5AC8 !important;
-}
-.ts-bg.c4 {
-    background-color: #FF704A !important;
-}
-.ts-bg.c5 {
-    background-color: #FFE445 !important;
-}
-
-
-.ts-c {
-    color: #59FFCE !important;
-    cursor: pointer;
-}
+.ts-c,
 .ts-c.c0 {
-    color: #59FFCE !important;
-}.ts-c.c1 {
-    color: #5AD8FF !important;
-}
-.ts-c.c2 {
-    color: #C676FF !important;
-}
-.ts-c.c3 {
-    color: #FF5AC8 !important;
-}
-.ts-c.c4 {
-    color: #FF704A !important;
-}.ts-c.c5 {
-    color: #FFE445 !important;
+    color: #59FFCE!important
 }
 
+.ts-bg,
+.ts-bg.c0 {
+    background-color: #59FFCE!important
+}
 
+.ts-bg.c1 {
+    background-color: #5AD8FF!important
+}
 
+.ts-bg.c2 {
+    background-color: #C676FF!important
+}
 
+.ts-bg.c3 {
+    background-color: #FF5AC8!important
+}
+
+.ts-bg.c4 {
+    background-color: #FF704A!important
+}
+
+.ts-bg.c5 {
+    background-color: #FFE445!important
+}
+
+.ts-hv-bg.c0:hover,
 .ts-hv-bg:hover {
-    background-color: #59FFCE !important;
-    cursor: pointer;
+    background-color: #59FFCE!important
 }
-.ts-hv-bg.c0:hover {
-    background-color: #59FFCE !important;
-}.ts-hv-bg.c1:hover{
-    background-color: #5AD8FF !important;
+
+.ts-c.c1 {
+    color: #5AD8FF!important
 }
+
+.ts-c.c2 {
+    color: #C676FF!important
+}
+
+.ts-c.c3 {
+    color: #FF5AC8!important
+}
+
+.ts-c.c4 {
+    color: #FF704A!important
+}
+
+.ts-c.c5 {
+    color: #FFE445!important
+}
+
+.ts-hv-bg.c1:hover {
+    background-color: #5AD8FF!important
+}
+
 .ts-hv-bg.c2:hover {
-    background-color: #C676FF !important;
+    background-color: #C676FF!important
 }
+
 .ts-hv-bg.c3:hover {
-    background-color: #FF5AC8 !important;
+    background-color: #FF5AC8!important
 }
+
 .ts-hv-bg.c4:hover {
-    background-color: #FF704A !important;
+    background-color: #FF704A!important
 }
+
 .ts-hv-bg.c5:hover {
-    background-color: #FFE445 !important;
+    background-color: #FFE445!important
 }
-
-
-
 
 .ts-hv-c.c0:hover {
-    color: #59FFCE !important;
-    cursor: pointer;
+    color: #59FFCE!important;
+    cursor: pointer
 }
+
 .ts-hv-c.c1:hover {
-    color: #5AD8FF !important;
-    cursor: pointer;
+    color: #5AD8FF!important
 }
+
 .ts-hv-c.c2:hover {
-    color:#C676FF !important;
-    cursor: pointer;
+    color: #C676FF!important
 }
+
 .ts-hv-c.c3:hover {
-    color: #FF5AC8 !important;
-    cursor: pointer;
+    color: #FF5AC8!important
 }
+
 .ts-hv-c.c4:hover {
-    color: #FF704A !important;
-    cursor: pointer;
+    color: #FF704A!important
 }
+
 .ts-hv-c.c5:hover {
-    color: #FFE445 !important;
-    cursor: pointer;
+    color: #FFE445!important
 }

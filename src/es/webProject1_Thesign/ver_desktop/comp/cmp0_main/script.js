@@ -15,11 +15,12 @@ $(document).ready(function () {
             updateCover(index, nextIndex, "onleave")
             updateDescription(index, "off");
             $("footer").hide();
-           if (index == 2 && nextIndex == 1) {
-                $("nav").hide();
+            if (index == 2 && nextIndex == 1) {
+                
                 $("footer").hide();
             }else{
                 $("nav").show();
+                 
             }
         }
     });
