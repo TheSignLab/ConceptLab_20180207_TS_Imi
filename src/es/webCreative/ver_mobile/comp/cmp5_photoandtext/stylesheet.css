@@ -1,0 +1,79 @@
+.cmp_PhotoText {
+
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+.cmp_PhotoText .wrapper {
+    width: 100vw;
+height: auto;
+
+    margin: 0 auto;
+    display: block;
+}
+
+.cmp_PhotoText .wrapper-wrapper {
+    width: 100vw;
+
+    margin: 0 auto;
+    display: block;
+
+}
+
+.cmp_PhotoText .wrapper .wrapper-text {
+    width: 90vw;
+    display: inline;
+    float: left;
+    padding-left: 10vw;
+    padding-right: 0px;
+    padding-bottom: 40px;
+    background-color: white;
+}
+
+.cmp_PhotoText .wrapper .wrapper-text h1 {
+    
+    padding-top: 50px;
+     font-size: 8vw;
+    font-family: font-light;
+    font-weight: 100;
+    line-height: 100%;
+    margin: 0px;
+
+
+    margin-bottom: 10px;
+
+}
+
+.cmp_PhotoText .wrapper .wrapper-text .hbar {
+    height: 1px;
+    width: 30px;
+    background-color: black;
+    margin-top: 2px;
+    margin-bottom:2px;
+
+
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: left;
+
+}
+
+.cmp_PhotoText .wrapper .wrapper-text p {
+    font-size: 4vw;
+    text-align: left;
+    font-family: font-light;
+    font-weight: 100;
+    width: calc(90% - 35px);
+    margin: 10px auto;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.cmp_PhotoText .wrapper .wrapper-img {
+    display: block;
+    width: 100vw;
+      height: 60vw;
+
+    background-image: url(../../../../resources/creative.jpg);
+    background-size: cover;
+    background-position: center;
+}

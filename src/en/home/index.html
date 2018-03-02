@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Homepage">
+    <meta name="author" content="TheSignLab">
+    <title>TheSignLab Homepage </title>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <link rel="stylesheet" type="text/css" href="lib/fullPage.js-master/dist/jquery.fullpage.css" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="lib/fullPage.js-master/vendors/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="lib/fullPage.js-master/vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="lib/fullPage.js-master/dist/jquery.fullpage.min.js"></script>
+    <script type="text/javascript" src="lib/fullPage.js-master/dist/jquery.fullpage.extensions.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.js"></script>
+
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/animate.css-master/animate.min.css">
+
+
+    <link rel="stylesheet" href="comp/cmp_fullpage/stylesheet.css">
+
+
+    <link rel="stylesheet" href="comp/cmp_SectionVideo/stylesheet.css">
+
+
+    <link rel="stylesheet" href="comp/cmp_SectionBranchs/stylesheet.css">
+
+    <link rel="stylesheet" href="comp/cmp_SectionTeam/stylesheet.css">
+
+    <link rel="stylesheet" href="comp/cmp_SectionFooter/stylesheet.css">
+
+    <link rel="stylesheet" href="comp/cmp_Navbar/stylesheet.css">
+
+    <link rel="stylesheet" href="comp/cmp_SideMenu/stylesheet.css">
+
+    <!--  Google Analytics  -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114039798-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-114039798-1');
+    </script>
+
+    <!-- \Google Analytics  -->
+
+
+</head>
+
+
+
+
+<body>
+
+    <!--  Elementos Fijos : Navbar,sidebar,footer -->
+    <nav>
+        <div class="title ts-hv-c">
+            <span>thes:gn</span>
+        </div>
+        <div class="sections">
+            <div class="section">
+                <div>
+
+                </div>
+            </div>
+            <div class="subsection ts-hv-c">
+                <div>
+                    <span class="f-light"> | el </span><span class="f-bold">menu</span>
+                </div>
+            </div>
+
+            <div class="dots ts-hv-c">
+                <span> : </span>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="SideMenu">
+        <div class="SideMenu-X">
+
+            <div class="x-1"></div>
+            <div class="x-2"></div>
+
+        </div>
+        <div class="SideMenu-Title" style="display: none"> | <span class="f-light">el</span> <span class="f-bold">menu</span></div>
+        <div class="SideMenu-wrapper">
+
+            <ul>
+                <li class="noBar active" onmouseover="hoverSideMenu(0,this)" onmouseout="outHoverSideMenu()">
+                    <span class="f-light">El</span>
+                    <span class="f-bold">MANIFESTO</span>
+                </li>
+                <li class="h-bar"></li>
+                <li class="noBar" onmouseover="hoverSideMenu(1,this)" onmouseout="outHoverSideMenu()">
+                    <span class="f-light">CREATIVE</span>
+                    <span class="f-bold">LAB</span>
+
+                </li>
+                <li class="h-bar"></li>
+                <li class="noBar" onmouseover="hoverSideMenu(2,this)" onmouseout="outHoverSideMenu()">
+                    <span class="f-light">CONCEPT</span>
+                    <span class="f-bold">LAB</span>
+                </li>
+                <li class="h-bar"></li>
+                <li class="noBar" onmouseover="hoverSideMenu(3,this)" onmouseout="outHoverSideMenu()">
+                    <span class="f-light">BLOG+</span>
+                    <span class="f-bold">MAGAZINE</span>
+                </li>
+                <li class="h-bar"></li>
+                <li class="noBar" onmouseover="hoverSideMenu(4,this)" onmouseout="outHoverSideMenu()">
+                    <span class="f-light online">ACA</span>
+                    <span class="f-bold online">DEMY</span>
+                </li>
+                <li class="h-bar"></li>
+                <li class="noBar" onmouseover="hoverSideMenu(5,this)" onmouseout="outHoverSideMenu()">
+                    <span class="f-light online">VEN</span>
+                    <span class="f-bold online">TURES</span>
+                </li>
+                <li class="h-bar"></li>
+                <li class="noBar" onmouseover="hoverSideMenu(6,this)" onmouseout="outHoverSideMenu()">
+                    <span class="f-light online">EL</span>
+                    <span class="f-bold online">EQUIPO</span>
+                </li>
+                <li class="h-bar"></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- / Elementos Fijos : Navbar,sidebar,footer -->
+
+    <!--  Preloader -->
+    <div class="ts-preloader">
+
+        <h1>thes:gn</h1>
+
+    </div>
+    <!--  /Preloader -->
+
+    <main>
+
+        <!-- PullPage Section ::  Video -->
+        <section class="bg-black" id="SectionVideo">
+            <div class="wrapper">
+                <video loop muted data-autoplay>
+                    <source src="comp/cmp_SectionVideo/intro.mp4" type="video/mp4">
+                    <source src="/cmp_SectionVideo/intro.ogg" type="video/ogg">
+                </video>
+            </div>
+        </section>
+        <!-- \PullPage Section ::  Video -->
+
+        <!-- PullPage Section ::  Brances -->
+        <section class="bg-white" id="SectionBranchs">
+            <div class="wrapper">
+                <div class="nav-padding upper">
+                    <div class="content"></div>
+                </div>
+                <div class="upper-menu">
+                    <ul class="menu">
+                        <li class="item ts-bg" onclick="updateBrandTab(0,this)">Branding estratégico</li>
+                        <li class="bar">|</li>
+                        <li class="item" onclick="updateBrandTab(1,this)">DISEÑO DE EXPERIENCIA</li>
+                        <li class="bar">|</li>
+                        <li class="item" onclick="updateBrandTab(2,this)">CONSULTORÍA DE DISEÑO</li>
+                        <li class="bar">|</li>
+                        <li class="item" onclick="updateBrandTab(3,this)">PROTOTIPADO DE IDEAS</li>
+                        <li class="bar">|</li>
+                        <li class="item" onclick="updateBrandTab(4,this)">CONCEPTO CREATIVO</li>
+                    </ul>
+                    <div class="nav-padding lower">
+                        <div class="content"></div>
+                    </div>
+                    <div class="text">
+
+                        <div class="content" trg="0">
+                            <h1 class="enable">El <span class="f-bold">encanto</span> detrás de una gran marca</h1>
+
+                            <p>
+                                Diseñamos marcas que enamoran a los consumidores, con elementos y valores que definen una manera única de percibir el mundo.
+                            </p>
+                        </div>
+                        <div class="content" trg="1">
+                            <h1 class="enable">Experiencias de <span class="f-bold">uso</span> significativas</h1>
+                            <p>
+                                Diseñamos productos, servicios y comunicación enfocadas en las personas y su experiencia.
+                            </p>
+                        </div>
+                        <div class="content" trg="2">
+                            <h1 class="enable">La <span class="f-bold"> búsqueda</span> de todo significado </h1>
+                            <p>
+                                Detrás de todo gran negocio está la estrategia de valor que lo distingue y lo hace único. Gracias al diseño ayudamos a construir los elementos clave para un modelo de negocio exitoso, un brillante producto nuevo, o el rediseño de un marca.
+                            </p>
+                        </div>
+                        <div class="content" trg="3">
+                            <h1 class="enable">La <span class="f-bold">materialización</span> de nuevas realidades</h1>
+                            <p>
+                                Prototipar una idea es demostrar en vez de hablar. Dar vida a una idea y crear el espacio para convertirse en una experiencia memorable de diseño
+                            </p>
+                        </div>
+                        <div class="content" trg="4">
+                            <h1 class="enable">La <span class="f-bold">estrategia</span> que define el futuro</h1>
+                            <p>
+                                Las grandes ideas pueden capturar el interés de sus audiencias, influenciar su respuesta emocional e inspirarlos a tomar acción. El concepto creativo es una idea que unifica todos los canales de comunicación de un negocio, los mensajes de una campaña y los deseos de sus audiencias.
+
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="seemore ts-bg" onclick="toogleSeeMore()">
+                        <span class="f-bold">ver </span><span class="f-light"> más</span>
+                    </div>
+
+                </div>
+                <div class="images" data-simple-slider>
+                    <div class="image" trg="0">
+                        <img class="thumb front" src="comp/cmp_SectionBranchs/images/image1_front_thumb.png">
+                        <img class="full front" src="comp/cmp_SectionBranchs/images/image1_front_thumb.png">
+                        <img class="thumb back" src="comp/cmp_SectionBranchs/images/image1_back_thumb.png">
+                        <img class="full back" src="comp/cmp_SectionBranchs/images/image1_back_full.png">
+                    </div>
+                    <div class="image" trg="1">
+                        <img class="thumb front" src="comp/cmp_SectionBranchs/images/image2_front_thumb.png">
+                        <img class="full front" src="comp/cmp_SectionBranchs/images/image2_back_full.png">
+                        <img class="thumb back" src="comp/cmp_SectionBranchs/images/image2_back_thumb.png">
+                        <img class="full back" src="comp/cmp_SectionBranchs/images/image2_back_full.png">
+                    </div>
+                    <div class="image" trg="2">
+                        <img class="thumb front" src="comp/cmp_SectionBranchs/images/image3_front_thumb.png">
+                        <img class="full front" src="comp/cmp_SectionBranchs/images/image3_back_full.png">
+                        <img class="thumb back" src="comp/cmp_SectionBranchs/images/image3_back_thumb.png">
+                        <img class="full back" src="comp/cmp_SectionBranchs/images/image3_back_full.png">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- \PullPage Section ::  Video -->
+
+
+        <!-- PullPage Section ::  Team-->
+        <section class="bg-black" id="SectionTeam">
+            <div class="wrapper">
+
+                <div class="header">
+                    <h1>Ocho <span class="f-bold">mentes creativas </span>trabajando en equipo</h1>
+                </div>
+                <div class="image">
+                    <img class="thumb" src="comp/cmp_SectionTeam/thesigners.JPG">
+                    <img class="full" src="comp/cmp_SectionTeam/thesigners.JPG">
+                </div>
+
+
+            </div>
+        </section>
+        <section class="bg-white fp-auto-height" id="SectionFooter">
+            <div class="wrapper">
+                <div class="Footer">
+                    <center>
+                        <div class="Footer-Email">
+                            <span class="f-bold">hello</span><span class="f-light">@thesignlab.co</span>
+                        </div>
+                        <div class="Footer-Address">
+                            805 7100 | Calle 123 #7 - 51 Of. 702 | Kaiwa Building
+
+                        </div>
+                        <div class="Footer-City">
+                            Bogotá, Colombia
+                        </div>
+                        <div class="Footer-HashAndSocial">
+                            <div class="Footer-Hash">#we<span class="f-bold">sign</span>ourworld</div>
+                            <div class="Footer-SocialList">
+                                <span> | </span>
+                                <span> <i class="fa fa-facebook" aria-hidden="true"></i> </span>
+                                <span> | </span>
+                                <span> <i class="fa fa-instagram" aria-hidden="true"></i> </span>
+                                <span> | </span>
+                                <i class="fa fa-behance" aria-hidden="true"></i>
+                                <span> | </span>
+                            </div>
+                            <div class="Footer-Drop">
+                                <i class="fa fa-tint" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+
+        </section>
+        <!-- PullPage Section ::  Team-->
+
+    </main>
+    <script>
+        var slider
+    </script>
+    <script type="text/javascript" src="comp/cmp_SectionVideo/app.js"></script>
+    <script type="text/javascript" src="comp/cmp_SectionBranchs/app.js"></script>
+    <script type="text/javascript" src="comp/cmp_SectionTeam/app.js"></script>
+    <script type="text/javascript" src="comp/cmp_Navbar/app.js"></script>
+    <script type="text/javascript" src="comp/cmp_SideMenu/app.js"></script>
+
+    <script type="text/javascript" src="comp/cmp_fullpage/app.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            init();
+
+            
+
+            slider = simpleslider.getSlider({
+                paused: true
+            });
+
+        });
+    </script>
+
+
+
+</body>
+
+
+
+
+</html>

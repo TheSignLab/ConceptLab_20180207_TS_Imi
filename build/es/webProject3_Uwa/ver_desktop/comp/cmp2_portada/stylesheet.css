@@ -1,0 +1,143 @@
+.mdl_Video {
+    display: none;
+    position: absolute;
+    height: 100vh;
+
+}
+
+.mdl_Video video {
+    height: 100vh;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+
+
+
+
+.mdl_PortadaText {
+    position: absolute;
+    top: -100vh;
+    height: 100vh;
+    width: 100vw; 
+    z-index: 10;
+    
+        display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    
+    align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    
+    background-color: rgba(0, 0, 0, 0.85);
+    
+    -webkit-transition: all 500ms ease-in-out;
+-moz-transition: all 500ms ease-in-out;
+-ms-transition: all 500ms ease-in-out;
+-o-transition: all 500ms ease-in-out;
+transition: all 500ms ease-in-out;
+}
+
+
+.mdl_PortadaText.onDisplay{
+    top: 0vh;
+}
+
+.mdl_PortadaText .wrapper{
+    height: auto;
+    width: auto;
+    color: white;
+    
+    text-align: center;
+}
+
+
+
+.mdl_PortadaText .wrapper h1{
+    text-transform: uppercase;
+    font-family: font-black;
+        font-size: 7vh;
+    margin: 0px;
+    
+}
+
+.mdl_PortadaText .wrapper h2{
+        font-family: font-light;
+    font-weight: 100;
+            font-size: 3.5vh;
+        margin: 0px;
+    
+}
+
+.mdl_PortadaText .wrapper p {
+    font-family: font-light;
+    font-weight: 100;
+      font-size: 2.5vh;
+    width: 40vw;
+    margin: 40px auto;
+    line-height: 130%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.cmp_Portada {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+
+}
+
+.cmp_Portada .content-back {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0vh;
+
+}
+
+.cmp_Portada .content-front {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: -100vh;
+
+    display: none;
+
+}
+
+
+.cmp_Portada img {
+    height: 100vh;
+    max-width: 100vw;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.cmp_Portada video {
+    height: 100vh;
+    max-width: 100vw;
+    margin: 0 auto;
+    display: none;
+}
+
+
+
