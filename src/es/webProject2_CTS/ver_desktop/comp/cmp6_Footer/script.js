@@ -46,7 +46,6 @@ function eraseCookie(name) {
 
 function getColorByCookie() {
     var ts_color_n = getCookie("ts-color-n");
-   
     if (!ts_color_n) {
         ts_color_n = 0;
     }

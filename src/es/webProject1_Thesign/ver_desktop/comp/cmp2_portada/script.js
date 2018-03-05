@@ -1,4 +1,7 @@
-
+var vid = document.querySelector("video");
+vid.onended = function () {
+    $.fn.fullpage.moveSectionDown();
+};
 
 function hideThisModal() {
     $(".mdl_PortadaText").removeClass("onDisplay");
@@ -23,12 +26,11 @@ function ModalWheelHandler(e) {
         var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
         if (delta == -1) {
             $(modalText).removeClass("onDisplay");
-     
+            $(".cmp_Portada img").hide();
             $("footer").fadeOut();
-           
-          
-            $("nav").show();
-            $("nav").css({color:"white"});
+            $(".cmp_Portada video").show();
+            $(".cmp_Portada video")[0].play();
+            $("nav").hide();
             $.fn.fullpage.setAllowScrolling(false);
         }
     }
@@ -52,24 +54,23 @@ function PortadaWheelHandler(e) {
         var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
         if (delta == 1) {
             $(modalText).addClass("onDisplay");
-          
+            $(".cmp_Portada img").show();
             $("footer").fadeIn();
             $("nav").show();
-           $("nav").css({color:"black"});
-           
+            $(".cmp_Portada video").hide();
+            $(".cmp_Portada video")[0].pause();
             $.fn.fullpage.setAllowScrolling(false);
         }
         else {
             $.fn.fullpage.moveTo(2);
             $.fn.fullpage.setAllowScrolling(true);
-             $("nav").css({color:"white"});
         }
     }
 }
 
 function updatePlayVideo(k) {
     if (k == 1) {
-    
-      
+        $(".cmp_Portada video").show();
+        $(".cmp_Portada video")[0].play();
     }
 }

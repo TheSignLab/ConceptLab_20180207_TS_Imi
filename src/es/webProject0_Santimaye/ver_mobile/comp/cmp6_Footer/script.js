@@ -83,9 +83,9 @@ $(document).ready(function () {
         $(".cmp_Cover .modal-prev").click(function () {
         var mob = getCookie("ts-isMobile");
         if (mob) {
-            location.href = "/ftp_web/es/webProject2_CTS/ver_mobile/index.html";
+            location.href = "/ftp_web/es/webProject0_Santimaye/ver_mobile/index.html";
         } else {
-            location.href = "/ftp_web/es/webProject2_CTS/ver_desktop/index.html";
+            location.href = "/ftp_web/es/webProject0_Santimaye/ver_desktop/index.html";
         }
     });
     

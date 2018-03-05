@@ -1,19 +1,18 @@
-function updateFloatingFooter(k){
-    if(k == 1){
+function updateFloatingFooter(k) {
+    if (k == 1) {
         $("footer").show()
-    }
-    else{
+    } else {
         $("footer").hide();
     }
-    
-    if(k== 2){
-         $("footer")[0].style.color ="black";
-    }else{
-        $("footer")[0].style.color ="white";
-    }
-    
 
-    
+    if (k == 2) {
+        $("footer")[0].style.color = "black";
+    } else {
+        $("footer")[0].style.color = "white";
+    }
+
+
+
 }
 
 
@@ -46,7 +45,6 @@ function eraseCookie(name) {
 
 function getColorByCookie() {
     var ts_color_n = getCookie("ts-color-n");
-   
     if (!ts_color_n) {
         ts_color_n = 0;
     }
@@ -57,9 +55,9 @@ function getColorByCookie() {
     $('.c3').removeClass('c3').addClass(ts_color_class);
     $('.c4').removeClass('c4').addClass(ts_color_class);
     $('.c5').removeClass('c5').addClass(ts_color_class);
-    
 
-    
+
+
 }
 
 
@@ -77,14 +75,14 @@ $(document).ready(function () {
     $(".cmp_Footer .fa-instagram").click(function () {
         window.location.href = "https://www.instagram.com/thesignlabco/?hl=es-la";
     });
-      $(".cmp_Footer .fa-behance").click(function () {
+    $(".cmp_Footer .fa-behance").click(function () {
         window.location.href = "https://www.behance.net/vincentproxy";
     });
 
-    
-    
-    
-    
+
+
+
+
     $(".Footer-Drop .init").mouseover(function () {
         $(".tintColor").fadeIn();
     });
@@ -97,29 +95,35 @@ $(document).ready(function () {
 
         window.location.href = " https://www.google.com.co/search?rlz=1C1CHBF_esCO769CO769&ei=Y_iKWoCNKs_t5gKp26agBQ&q=%23wesignourworld&oq=%23wesignourworld&gs_l=psy-ab.3...1868.5931.0.6052.3.3.0.0.0.0.441.717.2-1j0j1.2.0....0...1.1.64.psy-ab..1.0.0....0.b3jTuEUlkxM"
     })
-    
-    $(".Footer-Email").click(function(){
+
+    $(".Footer-Email").click(function () {
         window.location.href = "mailto:hello@thesignlab.co";
-    })
-
-    getColorByCookie();
+    });
 
     
-        $(".cmp_Cover .modal-prev").click(function () {
-            var mob = getCookie("ts-isMobile");
-            if (mob) {
-                location.href = "/ftp_web/es/webProject3_Uwa/ver_mobile/index.html";
-            } else {
-                location.href = "/ftp_web/es/webProject3_Uwa/ver_desktop/index.html";
-            }
-        });
-        $(".cmp_Cover .modal-next").click(function () {
-            var mob = getCookie("ts-isMobile");
-            if (mob) {
-                location.href = "/ftp_web/es/webProject1_Thesign/ver_mobile/index.html";
-            } else {
-                location.href = "/ftp_web/es/webProject1_Thesign/ver_desktop/index.html";
-            }
-        });
+    
+    
+    $(".cmp_Cover .modal-prev").click(function () {
+        var mob = getCookie("ts-isMobile");
+        if (mob) {
+            location.href = "/ftp_web/es/webProject2_CTS/ver_mobile/index.html";
+        } else {
+            location.href = "/ftp_web/es/webProject2_CTS/ver_desktop/index.html";
+        }
+    });
+    $(".cmp_Cover .modal-next").click(function () {
+        var mob = getCookie("ts-isMobile");
+        if (mob) {
+            location.href = "/ftp_web/es/webProject1_TheSign/ver_mobile/index.html";
+        } else {
+            location.href = "/ftp_web/es/webProject1_TheSign/ver_desktop/index.html";
+        }
+    });
+    
+    
+
+    
+    
+    getColorByCookie();
 
 });

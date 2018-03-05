@@ -27,8 +27,7 @@ function ModalWheelHandler(e) {
             $("footer").fadeOut();
            
           
-            $("nav").show();
-            $("nav").css({color:"black"});
+            $("nav").hide();
             $.fn.fullpage.setAllowScrolling(false);
         }
     }
@@ -55,14 +54,13 @@ function PortadaWheelHandler(e) {
           
             $("footer").fadeIn();
             $("nav").show();
-           $("nav").css({color:"white"});
+          
            
             $.fn.fullpage.setAllowScrolling(false);
         }
         else {
             $.fn.fullpage.moveTo(2);
             $.fn.fullpage.setAllowScrolling(true);
-             $("nav").css({color:"black"});
         }
     }
 }

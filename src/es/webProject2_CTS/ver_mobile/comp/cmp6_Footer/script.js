@@ -80,7 +80,7 @@ $(document).ready(function () {
 
     getColorByCookie();
 
-        $(".cmp_Cover .modal-next").click(function () {
+        $(".cmp_Cover .modal-prev").click(function () {
         var mob = getCookie("ts-isMobile");
         if (mob) {
             location.href = "/ftp_web/es/webProject0_Santimaye/ver_mobile/index.html";
@@ -89,12 +89,12 @@ $(document).ready(function () {
         }
     });
     
-    $(".cmp_Cover .modal-prev").click(function () {
+    $(".cmp_Cover .modal-next").click(function () {
           var mob = getCookie("ts-isMobile");
         if (mob) {
-            location.href = "/ftp_web/es/webProject3_Uwa/ver_mobile/index.html";
+            location.href = "/ftp_web/es/webProject1_Thesign/ver_mobile/index.html";
         } else {
-            location.href = "/ftp_web/es/webProject3_Uwa/ver_desktop/index.html";
+            location.href = "/ftp_web/es/webProject1_Thesign/ver_desktop/index.html";
         }
     });
 
