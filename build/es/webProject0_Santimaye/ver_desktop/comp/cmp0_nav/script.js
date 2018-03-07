@@ -1,5 +1,6 @@
 function updateNavStyle(nSection) {
-    if (nSection == 0 ) {
+    $("nav").show();
+    if (nSection == 0) {
         $("nav").removeClass("navShow");
     }
     else {
@@ -9,7 +10,8 @@ function updateNavStyle(nSection) {
         setTimeout(function () {
             $("nav").addClass("navLight");
         }, 500)
-    }else {
+    }
+    else {
         $("nav").removeClass("navLight");
     }
     if (nSection == 2 || nSection == 1) {

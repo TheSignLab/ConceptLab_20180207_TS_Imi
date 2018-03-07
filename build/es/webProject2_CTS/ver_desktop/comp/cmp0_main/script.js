@@ -16,10 +16,11 @@ $(document).ready(function () {
             updateDescription(index, "off");
             $("footer").hide();
             if (index == 2 && nextIndex == 1) {
-                $("nav").hide();
+                
                 $("footer").hide();
             }else{
                 $("nav").show();
+                 
             }
         }
     });
