@@ -7,7 +7,7 @@ mc.on("swipeup", function (ev) {
     $(".mdl_PortadaText").removeClass("onDisplay");
 
     $(".cmp_Portada img").hide();
-        $(".cmp_Portada .video-gif").show();
+    $(".cmp_Portada img.video").show();
 
 
     $(".cmp_Footer").show();
@@ -27,35 +27,34 @@ mc2.on("swipedown", function (ev) {
     k_swipe = k_swipe + 1;
     console.log(k_swipe)
     $(".mdl_PortadaText").addClass("onDisplay");
- 
+
     $(".cmp_Portada img").show();
- $(".cmp_Portada .video-gif").hide();
- $(".cmp_Portada .video-gif")[0].pause();
-    
-         var etop = $(".cmp_Portada").offset().top ;
+    $(".cmp_Portada img.video").hide();
+
+    var etop = $(".cmp_Portada").offset().top;
     $('html, body').animate({
-      scrollTop: etop
+        scrollTop: etop
     }, 1000);
-    
+
 
 
 });
 
 
 mc2.on("swipeup", function (ev) {
-   
+
     $(".mdl_PortadaText").removeClass("onDisplay");
 
     $(".cmp_Portada img").hide();
-    $(".cmp_Portada .video-gif").show();
-    $(".cmp_Portada .video-gif")[0].play();
-    
-       var etop = $(".cmp_Collage").offset().top;
+    $(".cmp_Portada .video").show();
+
+
+    var etop = $(".cmp_Collage").offset().top;
     $('html, body').animate({
-      scrollTop: etop - 60
+        scrollTop: etop - 60
     }, 1000);
-    
-   
+
+
 
 });
 
