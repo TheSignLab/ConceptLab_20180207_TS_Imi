@@ -1,8 +1,12 @@
 var mySwiper;
 $(document).ready(function () {
     mySwiper = new Swiper('.swiper-container', {
-        speed: 400
-        , spaceBetween: 100
+        speed: 400,
+        spaceBetween: 100,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        }
     });
     var k_photo;
     $(".Thumb").click(function () {
@@ -31,8 +35,7 @@ window.onclick = function (event) {
     var modal = document.getElementsByClassName("flex-wrapper")[0];
     if (event.target == modal) {
         $(".Modal").fadeOut(200)
-    }
-    else {}
+    } else {}
 }
 $(document).keyup(function (e) {
     if (e.keyCode == 27) {
@@ -46,8 +49,8 @@ function c_anim(k) {
     // $($(".Thumb")[k]).css({"left": "0px"})
     $($(".Thumb")[k]).fadeIn(150, function () {
         $($(".Thumb")[k]).css({
-            "display": "inherit"
-        , });
+            "display": "inherit",
+        });
     });
     $($(".Thumb")[k]).width('25%');
 }

@@ -1,8 +1,12 @@
 var mySwiper;
 $(document).ready(function () {
-    mySwiper = new Swiper('.swiper-container', {
-        speed: 400
-        , spaceBetween: 100
+       mySwiper = new Swiper('.swiper-container', {
+        speed: 400,
+        spaceBetween: 100,
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+        }
     });
     var k_photo;
     $(".Thumb").click(function () {
