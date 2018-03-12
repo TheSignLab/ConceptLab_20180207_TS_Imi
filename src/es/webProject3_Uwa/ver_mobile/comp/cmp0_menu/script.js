@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
- 
+
 
     $("main").click(function (e) {
         if (e.target.tagName !== "menu") {
@@ -10,8 +10,8 @@ $(document).ready(function () {
         }
 
     })
-    
-       $("nav .ts-hv-c").click(function () {
+
+    $("nav .ts-hv-c").click(function () {
 
         $("menu").addClass("active");
     })
@@ -20,33 +20,33 @@ $(document).ready(function () {
 
         $("menu").removeClass("active");
     })
-  
 
-    $("menu .btn_video").click(function(){
-        
+
+    $("menu .btn_video").click(function () {
+
         var lang = getCookie("ts-language");
         var mob = getCookie("ts-isMobile");
-        
-        location.href = "/ftp_web/es/webHome/ver_desktop/index.html";
-        
+
+        location.href = "/ftp_web/es/webHome/ver_desktop/index.html#VideoManifiesto";
+
     });
-    
-      $("menu .btn_team").click(function(){
-        
+
+    $("menu .btn_team").click(function () {
+
         var lang = getCookie("ts-language");
         var mob = getCookie("ts-isMobile");
-        
+
         location.href = "/ftp_web/es/webHome/ver_desktop/index.html";
-        
+
     });
-    
-       $("menu .btn_creative").click(function(){
-        
+
+    $("menu .btn_creative").click(function () {
+
         var lang = getCookie("ts-language");
         var mob = getCookie("ts-isMobile");
-        
+
         location.href = "/ftp_web/es/webCreative/ver_desktop/index.html";
-        
+
     });
 
 })
