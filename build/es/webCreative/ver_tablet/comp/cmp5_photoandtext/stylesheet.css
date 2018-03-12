@@ -73,7 +73,8 @@ height: auto;
     width: 100vw;
       height: 60vw;
 
-    background-image: url(../../../../resources/creative.jpg);
+    background-image: url(../../../../resources/creative.webp);
+
     background-size: cover;
     background-position: center;
 }

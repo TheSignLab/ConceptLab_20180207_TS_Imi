@@ -79,7 +79,8 @@ width: 550px;
       height: 60vh;
     display: inline;
        float: right;
-    background-image: url(../../../../resources/creative.jpg);
+        background-image: url(../../../../resources/creative.webp);
+
     background-size: cover;
     background-position: center;
 }

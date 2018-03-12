@@ -67,42 +67,22 @@ function setTSColor(k) {
     setCookie("ts-color-n", k, "10");
     getColorByCookie();
 }
-
 $(document).ready(function () {
-
     $(".cmp_Footer .fa-facebook").click(function () {
-        window.location.href = "https://www.facebook.com/thesignlabco/";
-    });
-
-    $(".cmp_Footer .fa-instagram").click(function () {
-        window.location.href = "https://www.instagram.com/thesignlabco/?hl=es-la";
-    });
-      $(".cmp_Footer .fa-behance").click(function () {
-        window.location.href = "https://www.behance.net/vincentproxy";
-    });
-
-    
-    
-    
-    
-    $(".Footer-Drop .init").mouseover(function () {
-        $(".tintColor").fadeIn();
-    });
-
-    $(".Footer-Drop").mouseleave(function () {
-        $(".tintColor").fadeOut();
-    });
-
-    $(".Footer-Hash").click(function () {
-
-        window.location.href = " https://www.google.com.co/search?rlz=1C1CHBF_esCO769CO769&ei=Y_iKWoCNKs_t5gKp26agBQ&q=%23wesignourworld&oq=%23wesignourworld&gs_l=psy-ab.3...1868.5931.0.6052.3.3.0.0.0.0.441.717.2-1j0j1.2.0....0...1.1.64.psy-ab..1.0.0....0.b3jTuEUlkxM"
-    })
-    
-    $(".Footer-Email").click(function(){
-        window.location.href = "mailto:hello@thesignlab.co";
-    })
-
-    getColorByCookie();
+        window.open("https://www.facebook.com/thesignlabco/", "_blank")
+    }), $(".cmp_Footer .fa-instagram").click(function () {
+        window.open("https://www.instagram.com/thesignlabco/?hl=es-la", "_blank")
+    }), $(".cmp_Footer .fa-behance").click(function () {
+        window.open("https://www.behance.net/vincentproxy", "_blank")
+    }), $(".cmp_Footer .Footer-Drop .init").mouseover(function () {
+        $(".tintColor").fadeIn()
+    }), $(".cmp_Footer .Footer-Drop").mouseleave(function () {
+        $(".tintColor").fadeOut()
+    }), $(".Footer-Hash").click(function () {
+        window.open("https://www.google.com.co/search?rlz=1C1CHBF_esCO769CO769&ei=Y_iKWoCNKs_t5gKp26agBQ&q=%23wesignourworld&oq=%23wesignourworld&gs_l=psy-ab.3...1868.5931.0.6052.3.3.0.0.0.0.441.717.2-1j0j1.2.0....0...1.1.64.psy-ab..1.0.0....0.b3jTuEUlkxM", "_blank")
+    }), $(".Footer-Email").click(function () {
+        window.location.href = "mailto:hello@thesignlab.co"
+    }), getColorByCookie();
 
     
         $(".cmp_Cover .modal-prev").click(function () {

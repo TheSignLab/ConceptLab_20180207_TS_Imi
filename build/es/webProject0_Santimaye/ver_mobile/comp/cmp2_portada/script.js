@@ -6,8 +6,8 @@ mc.get('swipe').set({
 mc.on("swipeup", function (ev) {
     $(".mdl_PortadaText").removeClass("onDisplay");
 
-    $(".cmp_Portada img").hide();
-        $(".cmp_Portada .video-gif").show();
+      $(".cmp_Portada img").hide();
+            $(".cmp_Portada img.video").show();
 
 
     $(".cmp_Footer").show();
@@ -28,9 +28,8 @@ mc2.on("swipedown", function (ev) {
     console.log(k_swipe)
     $(".mdl_PortadaText").addClass("onDisplay");
  
-    $(".cmp_Portada img").show();
- $(".cmp_Portada .video-gif").hide();
- $(".cmp_Portada .video-gif")[0].pause();
+  $(".cmp_Portada img").show();
+            $(".cmp_Portada img.video").hide();
     
          var etop = $(".cmp_Portada").offset().top ;
     $('html, body').animate({
@@ -47,8 +46,8 @@ mc2.on("swipeup", function (ev) {
     $(".mdl_PortadaText").removeClass("onDisplay");
 
     $(".cmp_Portada img").hide();
-    $(".cmp_Portada .video-gif").show();
-    $(".cmp_Portada .video-gif")[0].play();
+    $(".cmp_Portada .video").show();
+
     
        var etop = $(".cmp_Collage").offset().top;
     $('html, body').animate({

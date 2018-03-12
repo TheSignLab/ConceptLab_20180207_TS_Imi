@@ -393,10 +393,9 @@
      padding-top: 20px;
  }
 
-
  .swiper-slide .img-container {
      width: 80vw;
-     height: 80vh;
+     height: 60vh;
      background-size: cover;
      background-position: center center;
      margin: 0 auto;
