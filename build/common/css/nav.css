@@ -1,0 +1,193 @@
+body.dev-mobile nav {
+
+    position: fixed;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 40pt;
+
+    padding-top: 0;
+
+    z-index: 50;
+
+    color: white;
+    background-color: black;
+    overflow: hidden;
+}
+
+body.dev-mobile nav-title {
+
+    font-family: font-bold;
+    margin-right: auto;
+    padding: 0pt 10pt;
+}
+
+body.dev-mobile nav-section {
+    display: inline-block;
+
+    font-family: font-thin;
+
+    padding: 0pt 20pt;
+    margin-left: auto;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+body.dev-mobile nav-section dots {
+    display: inline-block;
+    height: 17.5pt;
+    width: 6pt;
+    background-image: url(../img/buttons_icons/dots.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    position: relative;
+    left: 6pt;
+    top: 2pt;
+
+}
+
+body.dev-mobile nav h2 {
+    margin: 0px;
+    font-weight: 100;
+    font-size: 17pt;
+}
+
+
+
+
+
+
+
+
+body.dev-desktop nav {
+
+    position: fixed;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60pt;
+
+    padding-top: 0;
+
+    z-index: 50;
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+body.dev-desktop nav-title {
+
+    font-family: font-bold;
+    margin-right: auto;
+    padding: 0pt 20pt;
+}
+
+body.dev-desktop nav-section {
+    display: inline-block;
+
+    font-family: font-thin;
+
+    padding: 0pt 20pt;
+    margin-left: auto;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+body.dev-desktop nav-section dots {
+    display: inline-block;
+    height: 37.5pt;
+    width: 8pt;
+    background-image: url(../img/buttons_icons/dots_black.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    position: relative;
+    left: 6pt;
+    top: 10pt;
+
+}
+body.dev-desktop nav-section dots.c0:hover{
+     background-image: url(../img/buttons_icons/dots_c0.png);
+}
+body.dev-desktop nav h2 {
+    margin: 0px;
+    font-weight: 100;
+    font-size: 30pt;
+}

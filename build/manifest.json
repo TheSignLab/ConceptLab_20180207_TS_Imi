@@ -1,0 +1,12 @@
+{
+  "name": "TheSign Lab",
+  "short_name": "TheSign",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "/index.html",
+  "icons": null,
+  "splash_pages": null
+}

@@ -1,0 +1,241 @@
+menu {
+
+    width: 100vw;
+    height: 100vh;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+
+    position: fixed;
+
+
+    right: -100vw;
+
+    z-index: 75;
+
+    font-size: 20pt;
+    background-color: black;
+    color: white;
+
+    -webkit-transition: right 500ms ease-in-out;
+    -moz-transition: right 500ms ease-in-out;
+    -ms-transition: right 500ms ease-in-out;
+    -o-transition: right 500ms ease-in-out;
+    transition: right 500ms ease-in-out;
+
+}
+
+
+
+
+body.dev-mobile menu.active{
+     right: -0vw;
+}
+body.dev-mobile menu item {
+    width: 50vw;
+    text-align: center;
+    border-bottom: 1pt solid white;
+    padding: 12pt;
+}
+
+
+
+
+body.dev-mobile menu item:last-child {
+    margin-bottom: 12pt;
+}
+
+body.dev-mobile menu h3 {
+    margin: 0px;
+    font-weight: 100;
+    font-size: 20pt;
+}
+
+body.dev-mobile menu menu-button {
+    position: absolute;
+    right: 5pt;
+    top: 10pt;
+    z-index: 80;
+    width: 30pt;
+}
+
+body.dev-mobile menu menu-button img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+body.dev-desktop menu.active{
+     right: -0vw;
+}
+body.dev-desktop menu item {
+    font-size: 50pt;
+    width: 50%;
+    text-align: left;
+    border-bottom: 1pt solid black;
+    padding: 6pt;
+    padding-bottom: 12pt;
+    padding-top: 30pt;
+    display: block;
+    font-family: font-bold;
+    font-weight: 100;
+}
+body.dev-desktop menu item.hbar{
+     padding: 0pt 12pt;
+    padding-bottom: 12pt;
+    display: block;
+}
+
+body.dev-desktop menu item.hbar span{
+    display: block;
+  background-color: white;
+    height: 2pt;
+    padding:0pt;
+    width: 30pt;
+}
+
+
+
+body.dev-desktop menu {
+    width: 350pt;
+    height: 100vh;
+    
+    right: -350pt;
+    
+  display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: start;
+    -ms-flex-line-pack: flex-start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-top: 10vh;
+}
+body.dev-desktop menu item:last-child {
+    margin-bottom: 12pt;
+}
+
+body.dev-desktop menu h3 {
+    margin: 0px;
+    font-weight: 100;
+    font-size: 25pt;
+}
+
+body.dev-desktop menu menu-button {
+    position: absolute;
+    right: 40pt;
+    top:40pt;
+    z-index: 80;
+    width:40pt;
+}
+
+body.dev-desktop menu menu-button img {
+    width: 100%;
+}
+
+
+body.dev-desktop menu pallete {
+    width: 230pt;
+    display: block;
+    font-size: 50pt;
+
+    text-align: left;
+    border-bottom: 1pt solid black;
+    padding: 6pt;
+    padding-bottom: 12pt;
+    padding-top: 30pt;
+    display: block;
+    font-family: font-bold;
+    font-weight: 100;
+    
+     -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    
+    
+}
+
+body.dev-desktop menu pallete color{
+    display: block;
+    background-color: white;
+    width: 20pt;
+    height: 20pt;
+    padding: 0pt;
+    margin: 0pt;
+    border-radius: 100pt;
+    transition: all .3s ease-in-out; 
+    cursor: pointer;
+}
+body.dev-desktop menu pallete .default{
+    display:  inline-block;
+    background-color: rgba(0,0,0,0);
+}
+body.dev-desktop menu pallete .vbar{
+    height: 30pt;
+    width: 2pt;
+    background-color: white;
+      display:  inline-block;
+    position: relative;
+    top:5pt;
+}
+body.dev-desktop menu pallete .color-verde{
+    display: inline-block;
+}
+body.dev-desktop menu pallete .color-azul{
+    display: inline-block;
+}
+body.dev-desktop menu pallete .color-morado{
+    display: inline-block;
+}
+body.dev-desktop menu pallete .color-rosado{
+    display: inline-block;
+}
+body.dev-desktop menu pallete .color-naranja{
+    display: inline-block;
+}
+body.dev-desktop menu pallete .color-azul{
+    display: inline-block;
+}
+body.dev-desktop menu pallete .color-amarillo{
+    display: inline-block;
+}
+
+body.dev-desktop menu pallete color:hover{
+    transform: scale(1.2); 
+}
+body.dev-desktop menu pallete color.default:hover{
+    transform: scale(1); 
+}

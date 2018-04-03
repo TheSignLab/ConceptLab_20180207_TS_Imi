@@ -1,0 +1,485 @@
+section.cmp_Categories {
+    padding-top: 50pt;
+    width: 100%;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+slide-front {}
+
+slide-image-front,
+slide-image-back {
+    width: 100%;
+}
+
+slide-image-front img,
+slide-image-back img {
+    width: 100%;
+}
+
+slide-front {
+    display: block;
+}
+
+slide-back {
+    display: none;
+}
+
+slide-frame {
+    width: 100%;
+    height: 150pt;
+    display: block;
+    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+
+}
+
+section.cmp_Categories slide-front slide-title {
+    width: 100%;
+
+    font-size: 15pt;
+    padding-bottom: 30pt;
+
+
+}
+
+section.cmp_Categories slide-front slide-seemore {
+    border: 1pt solid white;
+    width: 80pt;
+    font-size: 15pt;
+    text-align: center;
+    display: block;
+    text-align: center;
+    margin: 2pt auto;
+}
+
+section.cmp_Categories slide-back slide-subtitle {
+    width: 100%;
+    font-size: 13pt;
+    text-align: center;
+    display: block;
+    margin: 5pt auto;
+    line-height: 95%;
+}
+
+section.cmp_Categories slide-back slide-p {
+    width: 90%;
+    font-size: 12pt;
+    line-height: 95%;
+    letter-spacing: 0.1pt;
+    text-align: center;
+    display: block;
+    margin: 5pt auto;
+}
+
+section.cmp_Categories slide-back slide-seeless {
+
+    width: 80pt;
+    font-size: 15pt;
+    text-align: center;
+    display: block;
+    text-align: center;
+    margin: 5pt auto;
+}
+
+
+slide-seeless {
+    border: 1pt solid black;
+    width: 80pt;
+    font-size: 15pt;
+    text-align: center;
+    display: block;
+    text-align: center;
+    margin: 5pt auto;
+    display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    -webkit-filter: grayscale(100%) contrast(500%);
+    ;
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%) contrast(500%);
+    ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body.dev-desktop{
+    
+}
+
+
+
+
+
+
+body.dev-desktop .cmp_Categories categories-selector {
+    width: 100vw;
+    height: 20vh;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+body.dev-desktop .cmp_Categories .ts-bg {
+    font-family: font-bold;
+    -webkit-transition: background 200ms ease-in-out;
+    -moz-transition: background 200ms ease-in-out;
+    -ms-transition: background 200ms ease-in-out;
+    -o-transition: background 200ms ease-in-out;
+    transition: background 200ms ease-in-out;
+}
+
+body.dev-desktop .cmp_Categories categories-selector {
+    width: 90%;
+    max-width: 1500pt;
+    margin: 0 auto;
+    padding-top: 60pt;
+    height: calc(20vh - 60pt);
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+
+body.dev-desktop .cmp_Categories categories-selector item:hover {
+    filter: opacity(80%);
+    cursor: pointer;
+}
+
+
+
+
+
+
+body.dev-desktop .cmp_Categories view-front{
+       width: 100vw;
+    height: 80vh;
+}
+
+body.dev-desktop .cmp_Categories view-back{
+    display: none;
+    width: 100vw;
+    height: 80vh;
+}
+body.dev-desktop .cmp_Categories category {
+    width: 100vw;
+    height: 80vh;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+body.dev-desktop .cmp_Categories seemore {
+    padding: 2pt 10pt;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+body.dev-desktop .cmp_Categories category category-top {
+    height: 20vh;
+    width: 100%;
+    display: block;
+
+}
+
+body.dev-desktop .cmp_Categories category category-top h2 {
+
+    font-size: 35pt;
+    font-family: font-light;
+    font-weight: lighter;
+    text-align: center;
+     
+}
+
+body.dev-desktop .cmp_Categories category category-top seemore {
+
+    font-size: 25pt;
+    font-family: font-light !important;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+body.dev-desktop .cmp_Categories category category-top seemore:hover {
+    filter: brightness(95%);
+}
+
+body.dev-desktop .cmp_Categories category category-bottom {
+    height: 60vh;
+    width: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+   
+}
+
+body.dev-desktop .cmp_Categories category category-bottom img {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+body.dev-desktop .cmp_Categories category keywords{
+       display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    
+    font-size:20pt; 
+    width: 80vw;
+    
+    margin: 0 auto;
+}
+body.dev-desktop .cmp_Categories category keywords keyword{
+    display: block;
+    border-bottom: 2pt solid ;
+    padding-bottom: 3pt;
+
+}
+
+body.dev-desktop .cmp_Categories category p{
+    margin: 0pt;
+    padding: 0pt;
+    display: block;
+    width: 500pt;
+    font-size: 20pt;
+    margin: 20pt auto;
+    text-align: center;
+    line-height: 100%;
+}
+
+
+
+body.dev-desktop slide-front slide-row-top {
+    font-size: calc(10pt + 0.55vw);
+    width: 80%;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+
+    margin: 0 auto;
+}
+
+body.dev-desktop slide-front slide-row-top item.ts-bg {
+    font-family: font-bold;
+}
+
+body.dev-desktop slide-front slide-row-top item {
+    display: inline-block;
+    ;
+
+}
+
+body.dev-desktop slide-front slide-row-bottom {
+    width: 80%;
+    height: 80vh;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-align-content: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+
+body.dev-desktop slide-front slide-row-bottom slide-row-bottom-top {
+    width: 100%;
+    height: 20vh;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-align-content: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    font-size: calc(20pt + 0.50vw);
+}
+
+body.dev-desktop slide-front slide-row-bottom slide-row-bottom-top slide-row-seemore {
+    display: block;
+    padding: 0pt 20pt;
+    margin: 2pt 10pt;
+}
+
+body.dev-desktop slide-front slide-row-bottom slide-row-bottom-bottom {
+    width: 100%;
+    height: 60vh;
+    display: block;
+}
+
+body.dev-desktop slide-front slide-row-bottom slide-row-bottom-bottom img {
+    display: block;
+    height: 100%;
+}
