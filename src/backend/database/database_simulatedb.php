@@ -1,30 +1,6 @@
 <?php 
 
-class ProjectColor{
-    public $color_code;
-    public $color_r;
-    public $color_g;
-    public $color_b;
-}
-
-class Project{
-    
-    public $id;
-    public $route;
-    
-    public $colors;
-    
-    public $title;
-    public $keywords;
-    public $description;
-    
-    public $info_title;
-    public $info_description;
-          
-}
-
 // Colors //
-
 $color_white = new ProjectColor();
 $color_white->$color_code = "#ffffff";
 $color_white->$color_r = 255;
@@ -56,10 +32,6 @@ $_project->$description= "La creación de una identidad que representa la person
 $_project->$info_title = "la <strong>diversión</strong> 2.0"; 
 $_project->$info_description= "<p>Convertimos a una persona en una marca, comprendiendo todos los valores que definen su personalidad.</p> 
 <p>El diseño de marca contiene el lettering de su firma, con trazos suaves y fluidos. Dimos vida a sus elementos de comunicación, animaciones, emojis, pensando en su adaptación al medio digital.</p><p>Los diseños editoriales, cuadernos y papelería, integran todos los mensajes que Santimaye quiere compartir con sus seguidores. </p>";
-
-
-
-$projects[] = $_project;
 
 
 
