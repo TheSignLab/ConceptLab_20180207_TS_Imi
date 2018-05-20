@@ -1,0 +1,21 @@
+{
+    "name": "The Sign Lab. Laboratorio de Diseño y Branding Estratégico",
+    "short_name": "TheSignLab",
+    "lang": "es-ES",
+    "start_url": "./js/_ws.js",
+    "display": "standalone",
+    "theme_color": "#000",
+    "background_color": "#000",
+    "icons": [
+        {
+            "src": "favicon/favicon_png",
+            "sizes": "300x300",
+            "type": "image/png"
+    },
+        {
+            "src": "favicon/big_icon.png",
+            "sizes": "600x600",
+            "type": "image/png"
+    }
+  ]
+}
