@@ -23,7 +23,11 @@ class Project{
           
 }
 
-
-
+function render_conceptLab_project($x){
+    
+}
+function render_creativeLab_project($x){
+    
+}
 
 ?>

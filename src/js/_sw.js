@@ -1,27 +1,26 @@
-var cacheName = 'weatherPWA-step-6-1';
-var filesToCache = [
-  '/',
-  '/js/_cookies.js',
-  '/js/_router.js',
-  '/js/_sw.js'
-];
-
-self.addEventListener('install', function (e) {
-    console.log('[ServiceWorker] Install');
-    e.waitUntil(
-        caches.open(cacheName).then(function (cache) {
-            console.log('[ServiceWorker] Caching app shell');
-            return cache.addAll(filesToCache);
-        })
-    );
-});
-
-
-self.addEventListener('fetch', function (event) {
-    console.log(event.request.url);
+let CACHE_NAME = 'sw-v1'
+self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+    .then(cache => cache.addAll(['../views/404.html']))
+  )
+})
+self.addEventListener('fetch', (event) => {
+  if (event.request.method === 'GET') {
     event.respondWith(
-        caches.match(event.request).then(function (response) {
-            return response || fetch(event.request);
-        })
-    );
+      caches.match(event.request)
+      .then((cached) => {
+        var networked = fetch(event.request)
+          .then((response) => {
+            let cacheCopy = response.clone()
+            caches.open(CACHE_NAME)
+              .then(cache => cache.put(event.request, cacheCopy))
+            return response;
+          })
+          .catch(() => caches.match(offlinePage));
+        return cached || networked;
+      })
+    )
+  }
+  return;
 });

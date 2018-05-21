@@ -1,19 +1,19 @@
 var _router;
 
-class spaRouter {
+class meRouter {
 
     //On Init Object
     constructor(appName) {
         this.appName = appName;
         this.routeName = "";
     }
-    
+
     //Load JSON Config File
-    setConfig(settings){
+    setConfig(settings) {
         var objSettings = null;
-        if(!settings){
+        if (!settings) {
             objSettings = require('./config.json');
-        }else{
+        } else {
             objSettings = settings;
         }
         this.config = objSettings;
@@ -35,7 +35,7 @@ class spaRouter {
 
         //Save this route on Cookies
         this.setRouteOnCookie(routeName);
-        
+
         // Set MetaTags 
         this.setTitle(routeName);
         this.setDescription(routeName);
@@ -43,13 +43,30 @@ class spaRouter {
         this.setOpenGraph(routeName);
         this.setTwitterCard(routeName);
 
+        //FullPage.js
+
+        var Options = {
+            sectionSelector: 'section',
+            slideSelector: 'slide',
+            responsiveWidth: 650,
+            lazyLoading: true,
+
+        }
+        try {
+            $.fn.fullpage.destroy('all');
+            $("route[name='" + routeName + "']").fullpage(Options);
+        } catch (e) {
+            $("route[name='" + routeName + "']").fullpage(Options);
+        }
+
+
         // Update Google Analytics o Google Tag Manager
         gtag('config', 'UA-119124798-1', {
             'page_path': '/' + routeName
         });
 
     }
-    
+
     // Meta Tags Methods
     setTitle(routeName) {
 
@@ -66,20 +83,20 @@ class spaRouter {
     setTwitterCard(routeName) {
 
     }
-  
+
     // Cookies
-    setRouteOnCookie(routeName){
+    setRouteOnCookie(routeName) {
         setCookie("_route", routeName, 0.05);
     }
-    setRouteByCookie(){
+    setRouteByCookie() {
         this.setRoute(getCookie("_route"));
     }
-    
+
     //History Api 
-    setHistoryRoute(routeName){
-        window.history.pushState(null,null, routeName);
+    setHistoryRoute(routeName) {
+        //window.history.pushState(null, null, routeName);
     }
-    
+
 
 
 
@@ -92,5 +109,16 @@ class spaRouter {
 
 
 $(document).ready(function () {
-    let _router = new spaRouter("TheSignLab");
-})
+    // Run Routing
+    let _router = new meRouter("TheSignLab");
+    _router.setRoute("home");
+
+    // Hide Loader Element
+
+    document.querySelector("loader").style.display = "none";
+        document.querySelector("loader picture").style.display = "none";
+
+        
+
+
+});

@@ -1,0 +1,44 @@
+<style>
+    loader {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 100; /* z-index 100/100 */
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    loader picture{
+        display: block;
+        width: auto;
+        height: auto;
+        max-height: 100vh;
+        object-fit: cover;
+        
+    }
+</style>
+
+<!-- Loader Picture : Gif Selector according to media devices -->
+<picture>
+    <source media="(min-width: 650px)" srcset="img/Loader/pre_loader_anim">
+    <source media="(min-width: 465px)" srcset="img/Loader/pre_loader_anim">
+    <img src="img/Loader/pre_loader_anim" 
+         alt="TheSign Lab Agencia de Diseño y Branding Estrategico en Bogotá. Creamos campañas publicitarias, marcas , producción audiovisual y diseño y desarrollo de soluciones web en Colombia.">
+</picture>
+

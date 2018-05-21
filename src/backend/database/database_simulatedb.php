@@ -22,11 +22,11 @@ $color_blue->color_b = 214;
 
 
 // Projects //
-$projects = array();
+
 
 $_project = new Project();
 $_project->id =  0;
-$_project->route = "p0_santimaye";
+$_project->route = "creativeLab/santimaye";
 $_project->colors = array($color_white, $color_black, $color_blue);
 $_project->title = "Santimaye";
 $_project->keywords = array("Editorial","Motion Graphics","Illustración"," Dirección de Arte","Fotografía");
@@ -37,10 +37,18 @@ $_project->info_description= "<p>Convertimos a una persona en una marca, compren
 
 
 
-$projects[] = $_project;
-
 
 
 $creativeLab_ProjectList = array();
 $conceptLab_ProjectList = array();
+
+
+
+
+$creativeLab_ProjectList[] = $_project;
+
+
+
+
+
 ?>

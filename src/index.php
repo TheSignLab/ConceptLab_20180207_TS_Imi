@@ -13,9 +13,7 @@
     <?php require('imports/header-assets.php') ?>
     <!-- --------------  / HTML Head Meta Tag  ------------------ -->
 
-    <!-- ---------------  Google Analytics ---------------------- -->
-    <?php require('imports/analytics.php') ?>
-    <!-- --------------  / HTML Head Meta Tag  ------------------ -->
+
 </head>
 
 <body>
@@ -37,7 +35,7 @@
         </route>
         <?php 
             foreach ($creativeLab_ProjectList as $project) {
-                echo '<route name="'.$project->$routeName.'">';
+                echo '<route name="'.$project->route.'">';
                     render_creativeLab_project($project);
                 echo '</route>';
             }
@@ -47,7 +45,7 @@
         </route>
         <?php 
             foreach ($conceptLab_ProjectList as $project) {
-                echo '<route name="'.$project->$routeName.'">';
+                echo '<route name="'.$project->route.'">';
                     render_conceptLab_project($project);
                 echo '</route>';
             }
@@ -64,9 +62,15 @@
         <route name="team">
             <?php require('views/w6_team/main.php'); ?>
         </route>
+        
         <route name="manifesto">
             <?php require('views/w7_manifesto/main.php'); ?>
         </route>
+            <route name="contact">
+            <?php require('views/w8_contact/main.php'); ?>
+        </route>     
+
+        
         <route name="mobile-rotate">
             <?php require('views/mobile-rotate.html'); ?>
         </route>
@@ -84,6 +88,10 @@
     <!-- ---------------  Footer Assets (CSS/JS)  -------------------- -->
     <?php require('imports/footer-assets.php') ?>
     <!-- --------------- /Footer Assets (CSS/JS)  -------------------- -->
+    
+        <!-- ---------------  Google Analytics ---------------------- -->
+    <?php require('imports/analytics.php') ?>
+    <!-- --------------  / HTML Head Meta Tag  ------------------ -->
 
 </body>
 

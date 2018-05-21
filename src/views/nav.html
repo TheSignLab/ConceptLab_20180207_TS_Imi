@@ -1,0 +1,92 @@
+<style>
+    nav .line1 {
+        position: relative;
+        left: 0em;
+    }
+    nav .line2 {
+        position: relative;
+        left: -0.4em;
+    }
+
+    nav light {
+        font-family: 'font-light';
+    }
+    nav bold {
+        font-family: 'font-bold';
+    }
+    
+    nav div.header {
+        display: block;
+
+        font-family: 'font-bold';
+
+        width: 100vw;
+        z-index: 50;
+        height: auto;
+        height: fit-content;
+        position: fixed;
+        background-color: #000;
+        color: #fff;
+
+        box-sizing: border-box;
+        padding: 2%;
+
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+    }
+    nav div.content {
+        position: fixed;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        color: #fff;
+    }
+
+    nav div.header span.dots {
+        font-size: 2em;
+        position: relative;
+        top: 0.1em;
+        line-height: 0;
+    }
+
+    nav.active div.content{
+        left: 0vw;
+    }
+</style>
+
+<div class="header">
+    <div class="title">thes:gn</div>
+    <div class="button">
+        <span class="line1">|</span>
+        <span class="line2">|</span>
+        <light>el</light>menú
+        <span class="dots">:</span>
+    </div>
+</div>
+
+<div class="content">
+    <item routeTo="home"></item>
+    <item routeTo="creative"></item>
+    <item routeTo="team"></item>
+    <item routeTo="contact"></item>
+    <item routeTo="manifesto"></item>
+</div>
+
