@@ -89,7 +89,7 @@
     <?php require('imports/footer-assets.php') ?>
     <!-- --------------- /Footer Assets (CSS/JS)  -------------------- -->
     
-        <!-- ---------------  Google Analytics ---------------------- -->
+    <!-- ---------------  Google Analytics ---------------------- -->
     <?php require('imports/analytics.php') ?>
     <!-- --------------  / HTML Head Meta Tag  ------------------ -->
 
