@@ -4,6 +4,7 @@
 <html lang="es">
 
 <head>
+    
     <!-- --------------  HTML Head Meta Tag  -------------------- -->
     <?php require('imports/meta-tags.php') ?>
     <!-- --------------  / HTML Head Meta Tag  ------------------ -->
@@ -11,7 +12,6 @@
     <!-- --------------  HTML Head Meta Tag  -------------------- -->
     <?php require('imports/header-assets.php') ?>
     <!-- --------------  / HTML Head Meta Tag  ------------------ -->
-
 
 </head>
 

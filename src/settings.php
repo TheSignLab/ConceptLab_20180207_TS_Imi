@@ -16,7 +16,6 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
     ob_start("ob_html_compress");
 
 /*
-
 <VirtualHost *:443>
      DocumentRoot "C:\Users\walla\Documents\GitHub\ConceptLab_20180207_TS_Imi\src"
      ServerName dev.thesign
@@ -33,6 +32,6 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
 */
 ?>
 
-    <?php require('backend/database/database_models.php');?>
-    <?php require('backend/database/database_connection.php');?>
-    <?php require('backend/database/database_simulatedb.php');?>
+<?php require('backend/database/database_models.php');?>
+<?php require('backend/database/database_connection.php');?>
+<?php require('backend/database/database_simulatedb.php');?>
