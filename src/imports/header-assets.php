@@ -3,7 +3,6 @@
         font-family: 'font-bold';
         font-style: normal;
         font-weight: 100;
-        font-display: auto;
         src: local('font-bold'),
         url("../fonts/font-bold.woff") format('woff');
     }
@@ -12,7 +11,6 @@
         font-family: 'font-light';
         font-style: normal;
         font-weight: 100;
-        font-display: auto;
         src: local('font-bold'),
         url("../fonts/font-light.woff") format('woff');
     }
