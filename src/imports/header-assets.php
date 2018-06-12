@@ -4,7 +4,7 @@
         font-style: normal;
         font-weight: 100;
         src: local('font-bold'),
-        url("../fonts/font-bold.woff") format('woff');
+        url("fonts/font-bold.woff") format('woff');
     }
 
     @font-face {
@@ -12,7 +12,7 @@
         font-style: normal;
         font-weight: 100;
         src: local('font-bold'),
-        url("../fonts/font-light.woff") format('woff');
+        url("fonts/font-light.woff") format('woff');
     }
 
     body,

@@ -21,7 +21,7 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
     
-        # Redirect /xampp folder to https
+    # Redirect /xampp folder to https
     RewriteCond %{HTTPS} !=on
     RewriteCond %{REQUEST_URI} xampp
     RewriteRule ^(.*) https://%{SERVER_NAME}$1 [R,L]
@@ -41,7 +41,4 @@
     RewriteCond %{REQUEST_URI} webalizer
     RewriteRule ^(.*) https://%{SERVER_NAME}$1 [R,L]
     
-    SetOutputFilter DEFLATE
-    
-
 </IfModule>
