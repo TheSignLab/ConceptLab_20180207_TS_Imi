@@ -14,24 +14,15 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
     }
 
     ob_start("ob_html_compress");
-
-/*
-<VirtualHost *:443>
-     DocumentRoot "C:\Users\walla\Documents\GitHub\ConceptLab_20180207_TS_Imi\src"
-     ServerName dev.thesign
-     ServerAlias *.dev.thesign
-     SSLEngine on
-     SSLCertificateFile "crt/dev.thesign/server.crt"
-     SSLCertificateKeyFile "crt/dev.thesign/server.key"
-     <Directory "C:\Users\walla\Documents\GitHub\ConceptLab_20180207_TS_Imi\src">
-        Options Indexes FollowSymLinks
-        AllowOverride All
-        Require all granted
-    </Directory>
-</VirtualHost>
-*/
 ?>
 
 <?php require('backend/database/database_models.php');?>
 <?php require('backend/database/database_connection.php');?>
 <?php require('backend/database/database_simulatedb.php');?>
+
+
+<?php 
+    
+    $colors = array('Green','Blue','Purple','Pink','Orange','Yellow');
+
+?>

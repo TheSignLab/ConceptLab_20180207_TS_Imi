@@ -46,9 +46,14 @@ class meRouter {
         //FullPage.js
 
         var Options = {
+            
+            //responsive Width
+            responsiveWidth: 650,
+            
+            //Custom selectors
             sectionSelector: 'section',
             slideSelector: 'slide',
-            responsiveWidth: 650,
+
             lazyLoading: true,
 
         }
@@ -94,7 +99,7 @@ class meRouter {
 
     //History Api 
     setHistoryRoute(routeName) {
-        //window.history.pushState(null, null, routeName);
+        window.history.pushState(null, null, routeName);
     }
 
 
@@ -116,9 +121,9 @@ $(document).ready(function () {
     // Hide Loader Element
 
     document.querySelector("loader").style.display = "none";
-        document.querySelector("loader picture").style.display = "none";
+    document.querySelector("loader picture").style.display = "none";
 
-        
+
 
 
 });

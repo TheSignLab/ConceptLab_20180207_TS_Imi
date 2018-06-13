@@ -68,7 +68,6 @@
             <route name="contact">
             <?php require('views/w8_contact/main.php'); ?>
         </route>     
-
         
         <route name="mobile-rotate">
             <?php require('views/mobile-rotate.html'); ?>
