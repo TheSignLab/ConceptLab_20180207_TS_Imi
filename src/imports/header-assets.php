@@ -11,7 +11,7 @@
         font-family: 'font-light';
         font-style: normal;
         font-weight: 100;
-        src: local('font-bold'),
+        src: local('font-light'),
         url("fonts/font-light.woff") format('woff');
     }
 
@@ -44,5 +44,67 @@
     route[active] {
         z-index: 1;
     }
-
+    
+    ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .f-light,light{
+        font-family: 'font-light';
+    }
+    .f-bold,bold{
+        font-family: 'font-bold';
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    [desktop]{
+        display: none;
+    }
+    
+    [mobile]{
+        display: block;
+    }
+    
+    @media only screen and (min-width: 600px) {
+        [desktop]{
+            display: block;
+        }
+        [mobile]{
+            display: none;
+        }
+    }
 </style>

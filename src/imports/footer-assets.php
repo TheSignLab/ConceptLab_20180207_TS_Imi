@@ -17,11 +17,25 @@
 
 
 <script>
+    
+    /* ------------------------------------------------------------------  */
+    /* Console : Welcome ! ----------------------------------------------  */
+    /* ------------------------------------------------------------------  */
+        console.log("");
+        console.log('%c  THES:GN LAB CO  \n \n By Created by : Jorge Luis Mayorga ', 
+                    'background: #000; color: #fff;'+
+                    'font-size:18px;'+ 
+                    'padding: 1em;'+
+                    'margin:1em;'+
+                    'font-family: sans-serif;');
+        console.log("");
+    /* ------------------------------------------------------------------  */
+    
+
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
             .register('./js/_sw.js')
             .then(function(registration) {
-                console.log('Registration successful, scope is:', registration.scope);
                 if (me.debugger.serviceWorkers) {
                     me.debugger.message("ServiceWorker", "footer-assets.php", "Service Worker Registered");
                 }

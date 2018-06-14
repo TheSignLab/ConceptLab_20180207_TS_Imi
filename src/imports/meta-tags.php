@@ -13,7 +13,10 @@
 <title> The Sign Lab. Laboratorio de Diseño, Branding Estrategico, Diseño Empresarial y Desarrollo web </title>
 
 
+
+
 <base href="http://localhost/thesignlab-local/" target="_blank">
+<!-- <base href="http://thesignlab.co/ftp_dev/" target="_blank"> -->
 
 
 

@@ -54,7 +54,9 @@ class meRouter {
             sectionSelector: 'section',
             slideSelector: 'slide',
 
+
             lazyLoading: true,
+  
 
         }
         try {
@@ -99,7 +101,7 @@ class meRouter {
 
     //History Api 
     setHistoryRoute(routeName) {
-        window.history.pushState(null, null, routeName);
+       // window.history.pushState("/"+routeName);
     }
 
 

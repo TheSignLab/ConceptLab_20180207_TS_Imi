@@ -1,0 +1,100 @@
+<style>
+    ul.slide-menu{
+        width: 100vw;        
+        margin: 0px auto;
+        padding: 0px;
+        margin-top: 10vh;
+        
+        position: absolute;
+    }
+    ul.slide-menu li,slide .title{
+        display: none;
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 6.5vw;
+        text-align: center;
+    }
+    ul.slide-menu li.active{
+        display: block;
+    }
+    
+    slide{
+        font-size: 6.5vw;
+        text-align: center;
+        font-family: "font-light";
+    }
+
+    slide .title{
+        margin-top: 2em;
+        font-size:1em;
+        display: block;
+    }
+    slide .subtitle{
+        font-size: 1em;
+    }
+    slide .description{}
+    slide .keywords{}
+    slide .button{}
+    slide .images{}
+    
+</style>
+
+
+
+
+
+
+<ul class="slide-menu" desktop>
+{% for category in categories %}  
+    {% if loop.first %}
+        <li slide-target="{{category.name}}" slide-to="{{category.id}}" class="title active"> {{category.title | raw}} </li>
+    {% else %}
+        <li slide-target="{{category.name}}" slide-to="{{category.id}}" class="title"> {{category.title | raw}} </li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+
+
+
+
+
+{% for category in categories %}
+<slide class="category" name="{{category.name}}" >
+
+    <h1 class="title" mobile>
+     {{category.title | raw}}
+    </h1>
+
+    <h2 class="subtitle">
+       {{category.subtitle | raw}}
+    </h2>
+
+    <p class="description">
+        {{category.description}}
+    </p>
+
+    <ul class="keywords">
+    {% for keyword in category.keywords %}
+            <li class="keyword">{{keyword}}</li>    
+    {% endfor %}
+    </ul>
+
+    <button type="button" class="button" onclick="toogleCategoryView(this)"> 
+            <span class="f-light">VER</span>
+            <span class="f-bold">MAS</span>
+    </button>
+
+    <div class="images">
+        {% for color in colors %}
+            <picture class="active">
+                <source type="image/webp" srcset="img/Categories/{{category.imgPath}}/Low/{{color}}.webp">
+                <source type="image/jp2"  srcset="img/Categories/{{category.imgPath}}/Low/{{color}}/White.jp2">
+                   <img type="image/jpg"  src="img/Categories/{{category.imgPath}}/Low/{{color}}/White.jpg" 
+                        alt="TheSignLab Categories">
+            </picture>
+        {% endfor %}
+    </div>
+
+</slide>
+{% endfor %}
