@@ -53,6 +53,7 @@
     
     .f-light,light{
         font-family: 'font-light';
+            font-weight: 100;
     }
     .f-bold,bold{
         font-family: 'font-bold';

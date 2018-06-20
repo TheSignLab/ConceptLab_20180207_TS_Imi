@@ -26,6 +26,7 @@
     </nav>
 
     <routes>
+
         <route name="home" active>
             <?php require('views/w0_home/main.php'); ?>
         </route>
@@ -61,7 +62,7 @@
         <route name="team">
             <?php require('views/w6_team/main.php'); ?>
         </route>
-        
+ 
         <route name="manifesto">
             <?php require('views/w7_manifesto/main.php'); ?>
         </route>

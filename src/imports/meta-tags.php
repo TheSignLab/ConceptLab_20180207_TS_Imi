@@ -15,7 +15,7 @@
 
 
 
-<base href="http://localhost/thesignlab-local/" target="_blank">
+<base href="./" target="_blank">
 <!-- <base href="http://thesignlab.co/ftp_dev/" target="_blank"> -->
 
 

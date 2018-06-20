@@ -1,4 +1,5 @@
 <style>
+    
     nav .line1 {
         position: relative;
         left: 0em;
@@ -7,7 +8,6 @@
         position: relative;
         left: -0.4em;
     }
-
     
     nav div.header {
         display: block;
@@ -45,13 +45,49 @@
         align-items: center;
 
     }
+
     nav div.content {
         position: fixed;
-        left: -100vw;
+        left: 100vw;
         width: 100vw;
         height: 100vh;
         background-color: #000;
         color: #fff;
+
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
+
+    }
+
+    nav div.content item {
+        display: block;
+        color: white;
+        font-family: "font-bold";
+        text-transform: uppercase;
+        width: auto;
+        width: fit-content;
     }
 
     nav div.header span.dots {
@@ -61,10 +97,17 @@
         line-height: 0;
     }
 
-    nav.active div.content{
+    nav.active div.content {
         left: 0vw;
         z-index: 50;
+
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
     }
+
 </style>
 
 <div class="header">
@@ -78,10 +121,9 @@
 </div>
 
 <div class="content">
-    <item routeTo="home"></item>
-    <item routeTo="creative"></item>
-    <item routeTo="team"></item>
-    <item routeTo="contact"></item>
-    <item routeTo="manifesto"></item>
+    <item routeTo="home">Inicio</item>
+    <item routeTo="creative">Los Proyectos</item>
+    <item routeTo="team">El equipo</item>
+    <item routeTo="contact">El contacto</item>
+    <item routeTo="manifesto">El Manifesto</item>
 </div>
-
